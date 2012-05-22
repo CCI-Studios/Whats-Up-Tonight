@@ -78,9 +78,11 @@ $typekit = null;
 			</div>
 		</div></div>
 		
-		<div id="footer"><div class="container">
+		<div id="footer"><div><div class="container">
+			<span class="left span4">&copy; Whats Up Tonight.com <?php echo date('Y') ?>. All Rights Reserved.<br />
+				Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></span>
 			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</div></div>
+		</div></div></div>
 		
 	</div>
 
