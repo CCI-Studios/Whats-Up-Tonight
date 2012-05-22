@@ -26,3 +26,32 @@
 	}
 	
 }
+
+
+/* bottom mods */
+
+.pagination {
+	margin: 0;
+	text-align: center;
+	
+	ul {
+		padding: 0;
+		list-style: none;
+		
+		li {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			
+			padding: 0 8px;
+			
+			&:first-child {
+				padding-left: 0;
+			}
+			
+			a {
+				color: $orange;
+			}
+		}
+	}
+}
