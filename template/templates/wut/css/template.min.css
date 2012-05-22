@@ -584,13 +584,12 @@ p:first-child {
 
 h3 {
   font-size: 16px;
-  color: #ff8a00;
+  color: #e57900;
   text-transform: uppercase; }
 
 h4 {
   font-size: 14px;
-  color: #ff8a00;
-  text-transform: uppercase; }
+  color: #e57900; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -633,7 +632,7 @@ button {
 
 /* layout */
 #main {
-  padding: 0 0 20px 0; }
+  padding: 20px 0; }
 
 #content {
   margin-left: -20px; }
@@ -657,26 +656,41 @@ button {
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 10px 20px 30px;
-  margin-bottom: 1em;
+  padding: 13px 20px 30px;
+  margin-bottom: 3em;
   font-size: 14px;
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  position: relative; }
   #content .module h3 {
     border-bottom: 2px solid #e8e8e8;
-    padding-bottom: 5px; }
+    padding-bottom: 2px; }
   #content .module h4 {
     margin: 0 0 .5em 0; }
   #content .module .logo {
     overflow: visible;
     float: left;
     padding: 0 13px 10px 0; }
+  #content .module button {
+    background: url("../images/button.png") center center no-repeat;
+    border: none;
+    width: 120px;
+    height: 41px;
+    padding: 0 15px;
+    color: #fff;
+    text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
+    text-transform: uppercase;
+    line-height: 41px;
+    text-align: left;
+    position: absolute;
+    bottom: -20px;
+    left: 90px; }
 
 /* header mods */
 .social {
   text-align: right;
   margin: 13px 0;
   font-size: 14px;
-  color: #ff8a00;
+  color: #e57900;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7); }
   #footer .social {
     float: right;
@@ -691,9 +705,11 @@ button {
 /* bottom mods */
 .pagination {
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 2em 0; }
   .pagination ul {
     padding: 0;
+    margin: 0;
     list-style: none; }
     .pagination ul li {
       display: inline-block;
@@ -703,7 +719,8 @@ button {
       .pagination ul li:first-child {
         padding-left: 0; }
       .pagination ul li a {
-        color: #ff8a00; }
+        font-size: 14px;
+        color: #e57900; }
 
 /* menus */
 /* @group hmenu */
@@ -758,7 +775,7 @@ button {
       .moduletable_hmenu.category ul li:first-child {
         background: none; }
       .moduletable_hmenu.category ul li:hover {
-        background: url("../images/rollover_mainMenu.png") bottom right no-repeat; }
+        background: url("../images/rollover_mainMenu.png") 85% bottom no-repeat; }
       .moduletable_hmenu.category ul li a {
         background: url("../images/divider_mainMenu.png") left center no-repeat;
         padding: 0 17px 0 20px;
@@ -787,7 +804,7 @@ button {
     .moduletable_hmenu.secondary ul li a {
       color: #656565; }
       .moduletable_hmenu.secondary ul li a:hover {
-        color: #ff8a00;
+        color: #e57900;
         text-decoration: none; }
 
 /* styles */

@@ -3,26 +3,41 @@
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 10px 20px 30px;
-  margin-bottom: 1em;
+  padding: 13px 20px 30px;
+  margin-bottom: 3em;
   font-size: 14px;
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  position: relative; }
   #content .module h3 {
     border-bottom: 2px solid #e8e8e8;
-    padding-bottom: 5px; }
+    padding-bottom: 2px; }
   #content .module h4 {
     margin: 0 0 .5em 0; }
   #content .module .logo {
     overflow: visible;
     float: left;
     padding: 0 13px 10px 0; }
+  #content .module button {
+    background: url("../images/button.png") center center no-repeat;
+    border: none;
+    width: 120px;
+    height: 41px;
+    padding: 0 15px;
+    color: #fff;
+    text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
+    text-transform: uppercase;
+    line-height: 41px;
+    text-align: left;
+    position: absolute;
+    bottom: -20px;
+    left: 90px; }
 
 /* header mods */
 .social {
   text-align: right;
   margin: 13px 0;
   font-size: 14px;
-  color: #ff8a00;
+  color: #e57900;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7); }
   #footer .social {
     float: right;
@@ -37,9 +52,11 @@
 /* bottom mods */
 .pagination {
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 2em 0; }
   .pagination ul {
     padding: 0;
+    margin: 0;
     list-style: none; }
     .pagination ul li {
       display: inline-block;
@@ -49,4 +66,5 @@
       .pagination ul li:first-child {
         padding-left: 0; }
       .pagination ul li a {
-        color: #ff8a00; }
+        font-size: 14px;
+        color: #e57900; }

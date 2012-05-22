@@ -51,7 +51,7 @@
       .moduletable_hmenu.category ul li:first-child {
         background: none; }
       .moduletable_hmenu.category ul li:hover {
-        background: url("../images/rollover_mainMenu.png") bottom right no-repeat; }
+        background: url("../images/rollover_mainMenu.png") 85% bottom no-repeat; }
       .moduletable_hmenu.category ul li a {
         background: url("../images/divider_mainMenu.png") left center no-repeat;
         padding: 0 17px 0 20px;
@@ -80,5 +80,5 @@
     .moduletable_hmenu.secondary ul li a {
       color: #656565; }
       .moduletable_hmenu.secondary ul li a:hover {
-        color: #ff8a00;
+        color: #e57900;
         text-decoration: none; }
