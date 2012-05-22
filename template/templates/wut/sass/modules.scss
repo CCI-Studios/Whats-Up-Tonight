@@ -32,6 +32,24 @@
 	.description {
 		
 	}
+	
+	button {
+		background: url('../images/button.png') center center no-repeat;
+		border: none;
+		width: 120px;
+		height: 41px;
+		padding: 0 15px;
+		
+		color: #fff;
+		text-shadow: -1px -1px 0 rgba(#7e3900, .7);
+		text-transform: uppercase;
+		line-height: 41px;
+		text-align: left;
+		
+		position: absolute;
+		bottom: -20px;
+		left: 90px;
+	}
 
 }
 
