@@ -65,6 +65,42 @@
 		}
 	}
 }
+
+.moduletable_hmenu.primary {
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 0;
+	
+	ul {
+		background: url('../images/bg_mainMenu.png') top center no-repeat;
+		
+		
+		li {
+			padding: 0 0 10px 0;
+			&:first-child {
+				background: none;
+			}
+			&:hover {
+				background: url('../images/rollover_mainMenu.png') bottom right no-repeat;
+			}
+			
+			a {
+				background: url('../images/divider_mainMenu.png') left center no-repeat;
+				padding: 0 17px 0 20px;
+				line-height: 41px;
+				color: #fff;
+				
+				img {
+					position: relative;
+					top: 5px;
+				}
+				
+				span {
+					display: inline-block;
+					*display: inline;
+					*zoom: 1;
+					padding: 0 0 0 10px;
+					vertical-align: middle;
 				}
 			}
 		}
