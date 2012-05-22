@@ -106,3 +106,32 @@
 		}
 	}
 }
+
+.moduletable_hmenu.secondary {
+	font-size: 11px;
+	margin: 0;
+	text-align: center;
+	
+	ul {
+		
+		li {
+			padding: 0 15px;
+			border-left: 1px solid #656565;
+			&:first-child {
+				border-left: none;
+				padding-left: 0;
+			}
+			
+			a {
+				color: #656565;
+				&:hover {
+					color: $orange;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+
+
