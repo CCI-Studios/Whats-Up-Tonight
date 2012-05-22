@@ -12,6 +12,12 @@
 	font-size: 14px;
 	color: $orange;
 	text-shadow: 1px 1px 0 rgba(black, .7);
+	#footer & {
+		float: right;
+		color: black;
+		text-shadow: none;
+		margin: 0;
+	}
 	
 	p {
 		line-height: 2em;
