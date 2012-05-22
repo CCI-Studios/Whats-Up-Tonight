@@ -1,4 +1,22 @@
 /* @group modules */
+#content .module {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 20px 30px;
+  margin-bottom: 1em;
+  font-size: 14px;
+  color: #4c4c4c; }
+  #content .module h3 {
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 5px; }
+  #content .module h4 {
+    margin: 0 0 .5em 0; }
+  #content .module .logo {
+    overflow: visible;
+    float: left;
+    padding: 0 13px 10px 0; }
+
 /* header mods */
 .social {
   text-align: right;

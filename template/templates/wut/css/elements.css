@@ -6,7 +6,8 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 0; }
 
 a, a:active, a:visited {
   color: #607890;
@@ -18,3 +19,13 @@ a:hover {
 
 p:first-child {
   margin-top: 0; }
+
+h3 {
+  font-size: 16px;
+  color: #ff8a00;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 14px;
+  color: #ff8a00;
+  text-transform: uppercase; }

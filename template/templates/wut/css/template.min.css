@@ -411,6 +411,8 @@ table {
 
 .span4 {
   width: 300px; }
+  #content .span4 {
+    width: 258px; }
 
 .span3 {
   width: 220px; }
@@ -566,7 +568,8 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 0; }
 
 a, a:active, a:visited {
   color: #607890;
@@ -578,6 +581,16 @@ a:hover {
 
 p:first-child {
   margin-top: 0; }
+
+h3 {
+  font-size: 16px;
+  color: #ff8a00;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 14px;
+  color: #ff8a00;
+  text-transform: uppercase; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -623,8 +636,7 @@ button {
   padding: 0 0 20px 0; }
 
 #content {
-  margin-left: -20px;
-  height: 500px; }
+  margin-left: -20px; }
 
 #footer {
   background: url("../images/bg_footerRepeat.png") bottom center repeat-x; }
@@ -641,6 +653,24 @@ button {
           color: black; }
 
 /* @group modules */
+#content .module {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 20px 30px;
+  margin-bottom: 1em;
+  font-size: 14px;
+  color: #4c4c4c; }
+  #content .module h3 {
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 5px; }
+  #content .module h4 {
+    margin: 0 0 .5em 0; }
+  #content .module .logo {
+    overflow: visible;
+    float: left;
+    padding: 0 13px 10px 0; }
+
 /* header mods */
 .social {
   text-align: right;
