@@ -68,7 +68,8 @@ $typekit = null;
 		
 		<div id="main"><div class="container">
 			<div id="content">
-				This is my content.
+				<jdoc:include type="modules" name="content" style="rounded" />
+				<div class="clear"></div>
 			</div>
 			<div id="sidebar">
 				<jdoc:include type="modules" name="sidebar" style="xhtml" />
