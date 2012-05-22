@@ -12,15 +12,13 @@
   display: none; }
 
 /* These selection declarations have to be separate
-   No text-shadow: twitter.com/miketaylr/status/12228805301
-   Also: hot pink! */
-/* TODO Update selection BG color */
+   No text-shadow: twitter.com/miketaylr/status/12228805301 */
 ::-moz-selection {
-  background: #FF5E99;
+  background: #e57900;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #FF5E99;
+  background: #e57900;
   color: #fff;
   text-shadow: none; }
