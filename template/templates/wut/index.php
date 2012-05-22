@@ -57,23 +57,31 @@ $typekit = null;
 <body class="<?= $menu ?>">
 
 	<div id="wrapper">
-		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
-		</header>
-
-		<div id="main">
-			<aside>
-				<jdoc:include type="modules" name="left" style="xhtml" />
-			</aside>
-
-			<article>
-				<jdoc:include type="component" />
-			</article>
-		</div>
-
-		<footer>
+		
+		<div id="header"><div class="container">
+			<jdoc:include type="modules" name="header" style="xhtml" />
+		</div></div>
+		
+		<div id="masthead"><div class="container">
+			<jdoc:include type="modules" name="masthead" style="xhtml" />
+		</div></div>
+		
+		<div id="main"><div class="container">
+			<div id="content">
+				This is my content.
+			</div>
+			<div id="sidebar">
+				<jdoc:include type="modules" name="sidebar" style="xhtml" />
+			</div>
+			<div id="bottom">
+				<jdoc:include type="modules" name="bottom" style="xhtml" />
+			</div>
+		</div></div>
+		
+		<div id="footer"><div class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</footer>
+		</div></div>
+		
 	</div>
 
 	<div class="hidden">
