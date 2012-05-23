@@ -45,13 +45,13 @@
   text-transform: uppercase;
   margin: 0; }
   .moduletable_hmenu.category ul {
-    background: url("../images/bg_mainMenu.png") top center no-repeat; }
+    background: url("../images/bg_categoryMenu.png") top center no-repeat; }
     .moduletable_hmenu.category ul li {
       padding: 0 0 10px 0; }
-      .moduletable_hmenu.category ul li:first-child {
-        background: none; }
       .moduletable_hmenu.category ul li:hover {
         background: url("../images/rollover_mainMenu.png") 85% bottom no-repeat; }
+      .moduletable_hmenu.category ul li:first-child a {
+        background: none; }
       .moduletable_hmenu.category ul li a {
         background: url("../images/divider_mainMenu.png") left center no-repeat;
         padding: 0 17px 0 20px;
@@ -78,7 +78,8 @@
       border-left: none;
       padding-left: 0; }
     .moduletable_hmenu.secondary ul li a {
-      color: #656565; }
+      color: #656565;
+      line-height: 1em; }
       .moduletable_hmenu.secondary ul li a:hover {
         color: #e57900;
         text-decoration: none; }

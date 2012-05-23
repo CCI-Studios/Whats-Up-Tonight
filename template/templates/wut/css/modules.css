@@ -1,36 +1,53 @@
 /* @group modules */
-#content .module {
+.moduletable.grid > div {
+  min-height: 125px;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 13px 20px 30px;
+  padding: 13px 19px 30px;
   margin-bottom: 3em;
   font-size: 14px;
   color: #4c4c4c;
-  position: relative; }
-  #content .module h3 {
-    border-bottom: 2px solid #e8e8e8;
-    padding-bottom: 2px; }
-  #content .module h4 {
-    margin: 0 0 .5em 0; }
-  #content .module .logo {
-    overflow: visible;
-    float: left;
-    padding: 0 13px 10px 0; }
-  #content .module button {
-    background: url("../images/button.png") center center no-repeat;
-    border: none;
-    width: 120px;
-    height: 41px;
-    padding: 0 15px;
-    color: #fff;
-    text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
-    text-transform: uppercase;
-    line-height: 41px;
-    text-align: left;
+  position: relative;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* IE10+ */
+  background: linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* W3C */ }
+.moduletable.grid h3 {
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 2px; }
+.moduletable.grid h4 {
+  margin: 0 0 .5em 0; }
+.moduletable.grid .logo {
+  overflow: visible;
+  float: left;
+  padding: 0 13px 10px 0; }
+.moduletable.grid button {
+  background: url("../images/button.png") center center no-repeat;
+  border: none;
+  width: 120px;
+  height: 41px;
+  padding: 0 17px;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
+  text-transform: uppercase;
+  line-height: 41px;
+  text-align: left;
+  position: absolute;
+  bottom: -20px;
+  left: 90px; }
+  .moduletable.grid button img {
     position: absolute;
-    bottom: -20px;
-    left: 90px; }
+    top: 16px;
+    right: 20px; }
 
 /* header mods */
 .social {

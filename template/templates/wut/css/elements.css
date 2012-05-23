@@ -1,8 +1,9 @@
 /* elements */
 body, select, input, textarea {
-  color: #000;
+  color: #4e4e4e;
   font-family: Helvetica, Arial, sans-serif;
-  background: #1d1b1b url("../images/bg_body.jpg") top center no-repeat; }
+  background: #1d1b1b url("../images/bg_body.jpg") top center no-repeat;
+  font-size: 14px; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -17,8 +18,21 @@ a:hover {
   color: #036;
   text-decoration: underline; }
 
-p:first-child {
+p {
   margin-top: 0; }
+
+h1 {
+  font-size: 16px;
+  color: #e57900; }
+  #content h1 {
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 2px; }
+
+h2 {
+  font-size: 14px;
+  color: #e57900; }
+  #content h2 {
+    margin: 2em 0 .5em; }
 
 h3 {
   font-size: 16px;

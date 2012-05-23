@@ -3,6 +3,29 @@
   padding: 20px 0; }
 
 #content {
+  float: left;
+  width: 580px;
+  padding: 15px 19px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* IE10+ */
+  background: linear-gradient(bottom, #d8d8d8 0%, white 48%);
+  /* W3C */ }
+
+#sidebar {
+  float: left; }
+
+#grid {
   margin-left: -20px; }
 
 #footer {
