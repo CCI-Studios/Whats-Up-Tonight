@@ -73,12 +73,16 @@ $typekit = null;
 		<div id="main"><div class="container">
 			<?php if ($page_sfx !== '_hidden'): ?>
 			<div id="content">
-				<jdoc:include type="modules" name="content" style="rounded" />
+				<jdoc:include type="component" />
 				<div class="clear"></div>
 			</div>
 			<?php endif; ?>
 			<div id="sidebar">
 				<jdoc:include type="modules" name="sidebar" style="xhtml" />
+			</div>
+			<div id="grid">
+				<jdoc:include type="modules" name="grid" style="xhtml" />
+				<div class="clear"></div>
 			</div>
 			<div id="bottom">
 				<jdoc:include type="modules" name="bottom" style="xhtml" />
