@@ -27,6 +27,28 @@
 	
 }
 
+/* masthead mods */
+
+#masthead .moduletable {margin-left: 0;} // TODO REMOVE THIS
+
+.moduletable.pageTitle {
+	margin-left: 0;
+	
+	> div {
+		background: url('../images/bg_pageTitle.png') top center no-repeat;
+		line-height: 41px;
+		padding: 0 15px;
+		
+		text-transform: uppercase;
+		color: #fff;
+		
+
+		img {
+			padding: 7px 10px 0 0;
+		}
+	}
+}
+
 /* grid mods */
 
 .moduletable.grid {
