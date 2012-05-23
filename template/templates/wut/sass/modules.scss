@@ -22,8 +22,7 @@
 
 	
 	h3 {
-		border-bottom: 2px solid #e8e8e8;
-		padding-bottom: 2px;
+		@include underline;
 	}
 	
 	h4 {
