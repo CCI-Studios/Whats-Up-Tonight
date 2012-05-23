@@ -2,6 +2,9 @@
 #main {
   padding: 20px 0; }
 
+#header {
+  padding: 0 0 10px 0; }
+
 #content {
   float: left;
   width: 580px;

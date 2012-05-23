@@ -1,4 +1,37 @@
 /* @group modules */
+/* header mods */
+.social {
+  text-align: right;
+  margin: 13px 0;
+  font-size: 14px;
+  color: #e57900;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7); }
+  #footer .social {
+    float: right;
+    color: black;
+    text-shadow: none;
+    margin: 0; }
+  .social p {
+    line-height: 2em;
+    vertical-align: top;
+    margin: 0; }
+
+/* masthead mods */
+#masthead .moduletable {
+  margin-left: 0; }
+
+.moduletable.pageTitle {
+  margin-left: 0; }
+  .moduletable.pageTitle > div {
+    background: url("../images/bg_pageTitle.png") top center no-repeat;
+    line-height: 41px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #fff; }
+    .moduletable.pageTitle > div img {
+      padding: 7px 10px 0 0; }
+
+/* grid mods */
 .moduletable.grid > div {
   min-height: 125px;
   background-color: #fff;
@@ -48,23 +81,6 @@
     position: absolute;
     top: 16px;
     right: 20px; }
-
-/* header mods */
-.social {
-  text-align: right;
-  margin: 13px 0;
-  font-size: 14px;
-  color: #e57900;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7); }
-  #footer .social {
-    float: right;
-    color: black;
-    text-shadow: none;
-    margin: 0; }
-  .social p {
-    line-height: 2em;
-    vertical-align: top;
-    margin: 0; }
 
 /* bottom mods */
 .pagination {
