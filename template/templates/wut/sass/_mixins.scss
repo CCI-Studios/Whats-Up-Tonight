@@ -1,0 +1,13 @@
+@mixin mainGradient {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(bottom,  $gradientBottom 0%, $gradientTop 48%); /* FF3.6+ */
+	background: -webkit-linear-gradient(bottom,  $gradientBottom 0%, $gradientTop 48%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(bottom,  $gradientBottom 0%, $gradientTop 48%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(bottom, $gradientBottom 0%, $gradientTop 48%); /* IE10+ */
+	background: linear-gradient(bottom,  $gradientBottom 0%, $gradientTop 48%); /* W3C */
+}
+
+@mixin underline {
+	border-bottom: 2px solid #e8e8e8;
+	padding-bottom: 2px;
+}
