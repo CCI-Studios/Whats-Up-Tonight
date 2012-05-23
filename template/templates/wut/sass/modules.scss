@@ -4,6 +4,22 @@
 /* @group modules */
 .moduletable {}
 
+.moduletable.grid {
+	
+	> div {
+		min-height: 125px;
+		background-color: #fff;
+		border-radius: 5px;
+		border: $border;	
+		padding: 13px 19px 30px;
+		margin-bottom: 3em;
+		font-size: 14px;
+		color: #4c4c4c;
+		position: relative;
+		
+		@include mainGradient;
+	}
+
 	
 	h3 {
 		border-bottom: 2px solid #e8e8e8;
