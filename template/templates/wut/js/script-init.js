@@ -9,5 +9,5 @@ window.addEvent('domready', function() {
 
 window.addEvent('load', function () {
 	// columns
-	new CCI.Columns($('content'), '.module');
+	new CCI.Columns($('grid'), '.moduletable > div ');
 });
