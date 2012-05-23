@@ -77,11 +77,11 @@
 		
 		li {
 			padding: 0 0 10px 0;
-			&:first-child {
-				background: none;
-			}
 			&:hover {
 				background: url('../images/rollover_mainMenu.png') 85% bottom no-repeat;
+			}
+			&:first-child a {
+				background: none;
 			}
 			
 			a {
