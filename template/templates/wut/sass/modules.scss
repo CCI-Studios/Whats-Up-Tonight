@@ -4,6 +4,31 @@
 /* @group modules */
 .moduletable {}
 
+/* header mods */
+
+.social {
+	text-align: right;
+	margin: 13px 0;
+	font-size: 14px;
+	color: $orange;
+	text-shadow: 1px 1px 0 rgba(black, .7);
+	#footer & {
+		float: right;
+		color: black;
+		text-shadow: none;
+		margin: 0;
+	}
+	
+	p {
+		line-height: 2em;
+		vertical-align: top;
+		margin: 0;
+	}
+	
+}
+
+/* grid mods */
+
 .moduletable.grid {
 	
 	> div {
@@ -64,34 +89,6 @@
 	}
 
 }
-
-
-
-
-
-/* header mods */
-
-.social {
-	text-align: right;
-	margin: 13px 0;
-	font-size: 14px;
-	color: $orange;
-	text-shadow: 1px 1px 0 rgba(black, .7);
-	#footer & {
-		float: right;
-		color: black;
-		text-shadow: none;
-		margin: 0;
-	}
-	
-	p {
-		line-height: 2em;
-		vertical-align: top;
-		margin: 0;
-	}
-	
-}
-
 
 /* bottom mods */
 
