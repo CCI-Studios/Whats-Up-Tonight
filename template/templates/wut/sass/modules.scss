@@ -20,6 +20,7 @@
 		&.first {
 			border-left: none;
 		}
+		// TODO remove when rollover has been designed
 		&:hover * {
 			text-decoration: none;
 		}
@@ -27,7 +28,7 @@
 		&.featured {
 			position: relative;
 			top: -7px;
-			width: 177px;
+			width: 176px;
 			height: 103px;
 			padding-top: 12px;
 			background: url('../images/bg_featured.png') top center no-repeat;
@@ -95,8 +96,6 @@
 			}
 		}
 	}
-	
-
 	
 	.prev,
 	.next {
