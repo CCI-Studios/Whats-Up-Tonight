@@ -67,24 +67,6 @@
   overflow: visible;
   float: left;
   padding: 0 13px 10px 0; }
-.moduletable.grid button {
-  background: url("../images/button.png") center center no-repeat;
-  border: none;
-  width: 120px;
-  height: 41px;
-  padding: 0 17px;
-  color: #fff;
-  text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
-  text-transform: uppercase;
-  line-height: 41px;
-  text-align: left;
-  position: absolute;
-  bottom: -20px;
-  left: 90px; }
-  .moduletable.grid button img {
-    position: absolute;
-    top: 16px;
-    right: 20px; }
 
 /* bottom mods */
 .pagination {
