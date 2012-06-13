@@ -22,3 +22,25 @@
   background: #e57900;
   color: #fff;
   text-shadow: none; }
+
+button,
+input[type="submit"] {
+  background: url("../images/button.png") center center no-repeat;
+  border: none;
+  width: 120px;
+  height: 41px;
+  padding: 0 17px;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
+  text-transform: uppercase; }
+  button img,
+  input[type="submit"] img {
+    position: absolute;
+    top: 16px;
+    right: 20px; }
+
+.grid button {
+  position: absolute;
+  bottom: -20px;
+  left: 90px;
+  text-align: left; }
