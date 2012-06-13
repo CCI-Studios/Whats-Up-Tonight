@@ -562,8 +562,10 @@ table {
 body, select, input, textarea {
   color: #4e4e4e;
   font-family: Helvetica, Arial, sans-serif;
-  background: #1d1b1b url("../images/bg_body.jpg") top center no-repeat;
   font-size: 14px; }
+
+body {
+  background: #1d1b1b url("../images/bg_body.jpg") top center no-repeat; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -641,6 +643,34 @@ input:invalid, textarea:invalid {
 button {
   width: auto;
   overflow: visible; }
+
+.ccms_form_element {
+  padding-left: 0; }
+
+input[type="text"] {
+  height: 18px;
+  padding: 4px;
+  margin-bottom: 9px;
+  font-size: 13px;
+  line-height: 18px; }
+
+input[type="text"],
+textarea {
+  border: 1px solid #CCC;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s; }
+
+div.chronoform {
+  display: none; }
 
 /* layout */
 #main {
@@ -758,24 +788,6 @@ button {
   overflow: visible;
   float: left;
   padding: 0 13px 10px 0; }
-.moduletable.grid button {
-  background: url("../images/button.png") center center no-repeat;
-  border: none;
-  width: 120px;
-  height: 41px;
-  padding: 0 17px;
-  color: #fff;
-  text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
-  text-transform: uppercase;
-  line-height: 41px;
-  text-align: left;
-  position: absolute;
-  bottom: -20px;
-  left: 90px; }
-  .moduletable.grid button img {
-    position: absolute;
-    top: 16px;
-    right: 20px; }
 
 /* bottom mods */
 .pagination {
@@ -907,3 +919,25 @@ button {
   background: #e57900;
   color: #fff;
   text-shadow: none; }
+
+button,
+input[type="submit"] {
+  background: url("../images/button.png") center center no-repeat;
+  border: none;
+  width: 120px;
+  height: 41px;
+  padding: 0 17px;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
+  text-transform: uppercase; }
+  button img,
+  input[type="submit"] img {
+    position: absolute;
+    top: 16px;
+    right: 20px; }
+
+.grid button {
+  position: absolute;
+  bottom: -20px;
+  left: 90px;
+  text-align: left; }

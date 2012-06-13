@@ -12,3 +12,33 @@
    No text-shadow: twitter.com/miketaylr/status/12228805301 */
 ::-moz-selection{ background: $orange; color:#fff; text-shadow: none; }
 ::selection { background: $orange; color:#fff; text-shadow: none; }
+
+button,
+input[type="submit"] {
+	background: url('../images/button.png') center center no-repeat;
+	border: none;
+	width: 120px;
+	height: 41px;
+	padding: 0 17px;
+	
+	color: #fff;
+	text-shadow: -1px -1px 0 rgba(#7e3900, .7);
+	text-transform: uppercase;
+	
+	img {
+		position: absolute;
+		top: 16px;
+		right: 20px;
+	}
+}
+
+.grid button {
+	position: absolute;
+	bottom: -20px;
+	left: 90px;
+	
+	text-align: left;
+}
+
+input[type="submit"] {
+}
