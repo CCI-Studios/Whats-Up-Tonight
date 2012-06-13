@@ -49,13 +49,13 @@
     .moduletable_hmenu.category ul li {
       padding: 0 0 10px 0; }
       .moduletable_hmenu.category ul li:hover {
-        background: url("../images/rollover_mainMenu.png") 85% bottom no-repeat; }
+        background: url("../images/rollover_mainMenu.png") 85% 39px no-repeat; }
       .moduletable_hmenu.category ul li:first-child a {
         background: none; }
       .moduletable_hmenu.category ul li a {
         background: url("../images/divider_mainMenu.png") left center no-repeat;
         padding: 0 17px 0 20px;
-        line-height: 41px;
+        line-height: 38px;
         color: #fff; }
         .moduletable_hmenu.category ul li a img {
           position: relative;

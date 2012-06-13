@@ -691,21 +691,25 @@ button {
 
 /* @group modules */
 /* header mods */
-.social {
+.moduletable.social {
   text-align: right;
   margin: 13px 0;
   font-size: 14px;
   color: #e57900;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7); }
-  #footer .social {
+  #footer .moduletable.social {
     float: right;
     color: black;
     text-shadow: none;
     margin: 0; }
-  .social p {
+  .moduletable.social p {
     line-height: 2em;
     vertical-align: top;
     margin: 0; }
+
+.moduletable.logo {
+  float: left;
+  margin-left: 0; }
 
 /* masthead mods */
 #masthead .moduletable {
@@ -844,13 +848,13 @@ button {
     .moduletable_hmenu.category ul li {
       padding: 0 0 10px 0; }
       .moduletable_hmenu.category ul li:hover {
-        background: url("../images/rollover_mainMenu.png") 85% bottom no-repeat; }
+        background: url("../images/rollover_mainMenu.png") 85% 39px no-repeat; }
       .moduletable_hmenu.category ul li:first-child a {
         background: none; }
       .moduletable_hmenu.category ul li a {
         background: url("../images/divider_mainMenu.png") left center no-repeat;
         padding: 0 17px 0 20px;
-        line-height: 41px;
+        line-height: 38px;
         color: #fff; }
         .moduletable_hmenu.category ul li a img {
           position: relative;
