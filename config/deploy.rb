@@ -3,14 +3,14 @@ set :stages, %w(staging production)
 set :default_stage, "staging"
 require "capistrano/ext/multistage"
 
-set :application, "APPLICATION_NAME"
+set :application, "whatsup2nite.com"
 
 # repository info
-set :repository,  "git@github.com:CCI-Studios/PROJECT.git"
+set :repository,  "git@github.com:CCI-Studios/Whats-Up-Tonight.git"
 set :scm, :git
 
 # ssh settings
-set :user, "USERNAME"
+set :user, "wut"
 set :use_sudo, false
 
 # Joomla
@@ -176,6 +176,19 @@ namespace :deploy do
   task :start do ; end
   task :stop do ; end
   task :restart do ; end
+end
+
+namespace :misc do
+  
+  task :setup_ssh do
+    run <<-CMD
+      mkdir -p ~/.ssh;
+      ssh-keygen -t rsa -N '' -C "info@ccistudios.com" -f ~/.ssh/id_rsa;
+    CMD
+    
+    puts `cat ~/.ssh/id_rsa.pub`
+  end
+  
 end
 
 after "deploy:symlink", "deploy:symlink_modules"
