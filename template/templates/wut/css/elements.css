@@ -2,8 +2,10 @@
 body, select, input, textarea {
   color: #4e4e4e;
   font-family: Helvetica, Arial, sans-serif;
-  background: #1d1b1b url("../images/bg_body.jpg") top center no-repeat;
   font-size: 14px; }
+
+body {
+  background: #1d1b1b url("../images/bg_body.jpg") top center no-repeat; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
