@@ -109,6 +109,7 @@
 
 .moduletable_hmenu.secondary {
 	font-size: 11px;
+	font-weight: lighter;
 	margin: 0;
 	text-align: center;
 	
@@ -123,7 +124,7 @@
 			}
 			
 			a {
-				color: #656565;
+				color: #fff;
 				line-height: 1em;
 				&:hover {
 					color: $orange;

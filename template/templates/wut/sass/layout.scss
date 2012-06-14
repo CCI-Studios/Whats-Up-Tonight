@@ -3,6 +3,10 @@
 
 /* layout */
 
+#wrapper {
+	background: #1d1b1c url('../images/bg_body.jpg') top center no-repeat;
+}
+
 #main {
 	padding: 20px 0;
 }
@@ -31,11 +35,12 @@
 }
 
 #footer {
-	background: url('../images/bg_footerRepeat.png') bottom center repeat-x;
+	background: url('../images/bg_footerRepeat.png') top center repeat-x;
+	color: #000;
 	
 	 > div {
-		background: url('../images/bg_footer.jpg') bottom center no-repeat;
-		height: 127px;
+		background: url('../images/bg_footer.jpg') top center no-repeat;
+		height: 277px;
 		
 		> div {
 			padding: 15px 0 0 0;
