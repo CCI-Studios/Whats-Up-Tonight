@@ -35,10 +35,11 @@
   margin-left: -20px; }
 
 #footer {
-  background: url("../images/bg_footerRepeat.png") bottom center repeat-x; }
+  background: url("../images/bg_footerRepeat.png") top center repeat-x;
+  color: #000; }
   #footer > div {
-    background: url("../images/bg_footer.jpg") bottom center no-repeat;
-    height: 127px; }
+    background: url("../images/bg_footer.jpg") top center no-repeat;
+    height: 277px; }
     #footer > div > div {
       padding: 15px 0 0 0;
       font-size: 10px;
