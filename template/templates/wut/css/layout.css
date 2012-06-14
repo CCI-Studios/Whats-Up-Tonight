@@ -1,4 +1,7 @@
 /* layout */
+#wrapper {
+  background: #1d1b1c url("../images/bg_body.jpg") top center no-repeat; }
+
 #main {
   padding: 20px 0; }
 
