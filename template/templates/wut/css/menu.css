@@ -74,7 +74,7 @@
   text-align: center; }
   .moduletable_hmenu.secondary ul li {
     padding: 0 15px;
-    border-left: 1px solid #656565; }
+    border-left: 1px solid #fff; }
     .moduletable_hmenu.secondary ul li:first-child {
       border-left: none;
       padding-left: 0; }
