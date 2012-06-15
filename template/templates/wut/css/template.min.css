@@ -686,7 +686,7 @@ div.chronoform {
   float: left;
   width: 580px;
   padding: 15px 19px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #d9d9d9;
   border-radius: 5px;
   margin-bottom: 30px;
   background: #ffffff;
@@ -730,18 +730,18 @@ div.chronoform {
   .moduletable.scroll-menu .item {
     background: url("../images/bg_day.png") top center repeat-x;
     float: left;
-    width: 115px;
+    width: 116px;
     text-align: center;
     height: 86px;
-    padding-top: 5px;
-    border-left: 1px solid rgba(0, 0, 0, 0.15); }
-    .moduletable.scroll-menu .item.first {
+    padding: 4px 0 1px; }
+    .moduletable.scroll-menu .item.first a, .moduletable.scroll-menu .item.featured a {
       border-left: none; }
     .moduletable.scroll-menu .item:hover * {
       text-decoration: none; }
     .moduletable.scroll-menu .item a {
       display: block;
-      color: #e57900; }
+      color: #e57900;
+      border-left: 1px solid #d9d9d9; }
     .moduletable.scroll-menu .item .day {
       font-size: 16px;
       line-height: 16px;
@@ -766,6 +766,8 @@ div.chronoform {
     border-left: none; }
     .moduletable.scroll-menu .featured:hover {
       background: url("../images/bg_featured_over.png") top center no-repeat; }
+    .moduletable.scroll-menu .featured + .item a {
+      border-left: none; }
     .moduletable.scroll-menu .featured .day {
       color: #fff;
       z-index: 2;
@@ -775,6 +777,7 @@ div.chronoform {
       top: 28px;
       left: 40px;
       font-size: 84px;
+      line-height: 60px;
       font-weight: bold;
       color: #ffb540;
       text-shadow: none;
@@ -850,7 +853,7 @@ div.chronoform {
   min-height: 125px;
   background-color: #fff;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #d9d9d9;
   padding: 13px 19px 30px;
   margin-bottom: 3em;
   font-size: 14px;
@@ -928,10 +931,8 @@ div.chronoform {
       height: 78px;
       position: relative; }
       .moduletable_hmenu.primary ul li a {
-        color: #000;
-        overflow: visible; }
+        color: #000; }
         .moduletable_hmenu.primary ul li a:hover {
-          color: #000;
           text-decoration: none; }
         .moduletable_hmenu.primary ul li a span {
           padding: 10px 0;

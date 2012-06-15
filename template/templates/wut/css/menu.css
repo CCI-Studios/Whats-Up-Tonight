@@ -28,10 +28,8 @@
       height: 78px;
       position: relative; }
       .moduletable_hmenu.primary ul li a {
-        color: #000;
-        overflow: visible; }
+        color: #000; }
         .moduletable_hmenu.primary ul li a:hover {
-          color: #000;
           text-decoration: none; }
         .moduletable_hmenu.primary ul li a span {
           padding: 10px 0;
