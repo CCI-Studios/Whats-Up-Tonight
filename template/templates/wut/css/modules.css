@@ -14,67 +14,76 @@
       border-left: none; }
     .moduletable.scroll-menu .item:hover * {
       text-decoration: none; }
-    .moduletable.scroll-menu .item.featured {
-      position: relative;
-      top: -7px;
-      width: 176px;
-      height: 103px;
-      padding-top: 12px;
-      background: url("../images/bg_featured.png") top center no-repeat;
-      border-left: none; }
-      .moduletable.scroll-menu .item.featured .day {
-        color: #fff;
-        z-index: 2;
-        position: relative; }
-      .moduletable.scroll-menu .item.featured .date {
-        position: absolute;
-        top: 28px;
-        left: 40px;
-        font-size: 84px;
-        font-weight: bold;
-        color: #ffb540;
-        text-shadow: none;
-        z-index: 1; }
-      .moduletable.scroll-menu .item.featured .ups {
-        color: #fff;
-        font-weight: normal;
-        text-shadow: -1px -1px 1px black;
-        margin-top: 49px;
-        z-index: 2;
-        position: relative; }
-      .moduletable.scroll-menu .item.featured .logo-featured {
-        background: url("../images/logo-featured.png") center center no-repeat;
-        width: 151px;
-        height: 29px;
-        position: absolute;
-        top: 35px;
-        left: 17px;
-        z-index: 2; }
     .moduletable.scroll-menu .item a {
-      display: block; }
-      .moduletable.scroll-menu .item a .day {
-        font-size: 16px;
-        line-height: 16px;
-        text-transform: uppercase;
-        color: #e57900; }
-      .moduletable.scroll-menu .item a .date {
-        font-size: 58px;
-        line-height: 50px;
-        color: #e57900;
-        text-shadow: -1px -1px 1px rgba(103, 48, 0, 0.75); }
-      .moduletable.scroll-menu .item a .ups {
-        font-size: 14px;
-        font-weight: bold;
-        color: #000; }
+      display: block;
+      color: #e57900; }
+    .moduletable.scroll-menu .item .day {
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase; }
+    .moduletable.scroll-menu .item .date {
+      font-size: 58px;
+      line-height: 50px;
+      text-shadow: -1px -1px 1px rgba(103, 48, 0, 0.75); }
+      .moduletable.scroll-menu .item .date:hover {
+        color: #fe8f00; }
+    .moduletable.scroll-menu .item .ups {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000; }
+  .moduletable.scroll-menu .featured {
+    position: relative;
+    top: -7px;
+    width: 176px;
+    height: 103px;
+    padding-top: 12px;
+    background: url("../images/bg_featured_normal.png") top center no-repeat;
+    border-left: none; }
+    .moduletable.scroll-menu .featured:hover {
+      background: url("../images/bg_featured_over.png") top center no-repeat; }
+    .moduletable.scroll-menu .featured .day {
+      color: #fff;
+      z-index: 2;
+      position: relative; }
+    .moduletable.scroll-menu .featured .date {
+      position: absolute;
+      top: 28px;
+      left: 40px;
+      font-size: 84px;
+      font-weight: bold;
+      color: #ffb540;
+      text-shadow: none;
+      z-index: 1; }
+      .moduletable.scroll-menu .featured .date:hover {
+        color: #ffb540; }
+    .moduletable.scroll-menu .featured .ups {
+      color: #fff;
+      font-weight: normal;
+      text-shadow: -1px -1px 1px black;
+      margin-top: 49px;
+      z-index: 2;
+      position: relative; }
+    .moduletable.scroll-menu .featured .logo-featured {
+      background: url("../images/logo-featured.png") center center no-repeat;
+      width: 151px;
+      height: 29px;
+      position: absolute;
+      top: 35px;
+      left: 17px;
+      z-index: 2; }
   .moduletable.scroll-menu .prev,
   .moduletable.scroll-menu .next {
     float: left;
     width: 32px;
     height: 91px; }
   .moduletable.scroll-menu .prev {
-    background: url("../images/bg_prev.png") top center no-repeat; }
+    background: url("../images/bg_prev_normal.png") top center no-repeat; }
+    .moduletable.scroll-menu .prev:hover {
+      background: url("../images/bg_prev_over.png") top center no-repeat; }
   .moduletable.scroll-menu .next {
-    background: url("../images/bg_next.png") top center no-repeat; }
+    background: url("../images/bg_next_normal.png") top center no-repeat; }
+    .moduletable.scroll-menu .next:hover {
+      background: url("../images/bg_next_over.png") top center no-repeat; }
 
 .moduletable.social {
   text-align: right;
