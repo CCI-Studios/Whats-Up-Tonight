@@ -6,133 +6,7 @@
 
 /* header mods */
 
-.moduletable.scroll-menu {
-	margin: 1em 0;
-	
-	.item {
-		background: url('../images/bg_day.png') top center repeat-x;
-		float: left;
-		width: 116px;
-		text-align: center;
-		height: 86px;
-		padding: 4px 0 1px;
-		&.first a,
-		&.featured a {
-			border-left: none;
-		}
-		&:hover * {
-			text-decoration: none;
-		}
-		
-		a {
-			display: block;
-			color: $orange;
-			border-left: $border;
-		}
-		
-		.day {
-			font-size: 16px;
-			line-height: 16px;
-			text-transform: uppercase;
-		}
-
-		.date {
-			font-size: 58px;
-			line-height: 50px;
-			text-shadow: -1px -1px 1px $text-shadow;
-			&:hover {
-				color: #fe8f00;
-			}
-		}
-
-		.ups {
-			font-size: 14px;
-			font-weight: bold;
-			color: #000;
-		}
-	}
-	
-	.featured {
-		position: relative;
-		top: -7px;
-		width: 176px;
-		height: 103px;
-		padding-top: 12px;
-		background: url('../images/bg_featured_normal.png') top center no-repeat;
-		border-left: none;
-		&:hover {
-			background: url('../images/bg_featured_over.png') top center no-repeat;
-		}
-		//removes border-left on item after the featured item
-		& + .item a {
-			border-left: none;
-		}
-		.day {
-			color: #fff;
-			z-index: 2;
-			position: relative;
-		}
-		
-		.date {
-			position: absolute;
-			top: 28px;
-			left: 40px;
-			
-			font-size: 84px;
-			line-height: 60px; //fix for IE7
-			font-weight: bold;
-			color: #ffb540;
-			text-shadow: none;
-			z-index: 1;
-			&:hover {
-				color: #ffb540;
-			}
-		}
-		
-		.ups {
-			color: #fff;
-			font-weight: normal;
-			text-shadow: -1px -1px 1px black;
-			margin-top: 49px;
-			z-index: 2;
-			position: relative;
-		}
-		
-		.logo-featured {
-			background: url('../images/logo-featured.png') center center no-repeat;
-			width: 151px;
-			height: 29px;
-			position: absolute;
-			top: 35px;
-			left: 17px;
-			z-index: 2;
-		}
-	}
-	
-	.prev,
-	.next {
-		float: left;
-		width: 32px;
-		height: 91px;
-	}
-	
-	.prev {
-		background: url('../images/bg_prev_normal.png') top center no-repeat;
-		&:hover {
-			background: url('../images/bg_prev_over.png') top center no-repeat;
-		}
-	}
-	
-	.next {
-		background: url('../images/bg_next_normal.png') top center no-repeat;
-		&:hover {
-			background: url('../images/bg_next_over.png') top center no-repeat;
-		}
-	}
-	
-}
-
-.moduletable.social {
+.module.social {
 	text-align: right;
 	margin: 13px 0;
 	font-size: 14px;
@@ -153,18 +27,18 @@
 	
 }
 
-.moduletable.logo {
+.module.logo {
 	float: left;
 	margin-left: 0;
 }
 
 /* masthead mods */
 
-#masthead .moduletable {
+#masthead .module {
 	margin-left: 0;
 } // TODO REMOVE THIS
 
-.moduletable.pageTitle {
+.module.pageTitle {
 	margin-left: 0;
 	
 	> div {
@@ -184,7 +58,7 @@
 
 /* grid mods */
 
-.moduletable.grid {
+.module.grid {
 	
 	> div {
 		min-height: 125px;
@@ -235,11 +109,7 @@
 			*zoom: 1;
 			
 			padding: 0 8px;
-			
-			&:first-child {
-				padding-left: 0;
-			}
-			
+						
 			a {	
 				font-size: 14px;
 				color: $orange;

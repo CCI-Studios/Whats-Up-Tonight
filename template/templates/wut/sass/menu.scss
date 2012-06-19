@@ -4,7 +4,7 @@
 /* menus */
 
 /* @group hmenu */
-.moduletable_hmenu {
+.module_hmenu {
 	
 	ul {
 		margin: 0;
@@ -26,7 +26,7 @@
 	}
 }
 
-.moduletable_hmenu.primary {
+.module_hmenu.primary {
 	float: right;
 	font-size: 12px;
 	font-weight: bold;
@@ -64,7 +64,7 @@
 	}
 }
 
-.moduletable_hmenu.category {
+.module_hmenu.category {
 	font-size: 14px;
 	text-transform: uppercase;
 	margin: 0;
@@ -105,7 +105,7 @@
 	}
 }
 
-.moduletable_hmenu.secondary {
+.module_hmenu.secondary {
 	font-size: 11px;
 	font-weight: lighter;
 	margin: 0;
@@ -118,7 +118,6 @@
 			border-left: 1px solid #fff;
 			&:first-child {
 				border-left: none;
-				padding-left: 0;
 			}
 			
 			a {
@@ -132,6 +131,3 @@
 		}
 	}
 }
-
-
-

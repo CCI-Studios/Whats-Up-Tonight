@@ -1,0 +1,88 @@
+/* scroll-menu */
+.module.scroll-menu {
+  margin: 1em 0; }
+  .module.scroll-menu .item {
+    background: url("../images/bg_day.png") top center repeat-x;
+    float: left;
+    width: 116px;
+    text-align: center;
+    height: 86px;
+    padding: 4px 0 1px; }
+    .module.scroll-menu .item.first a, .module.scroll-menu .item.featured a {
+      border-left: none; }
+    .module.scroll-menu .item:hover * {
+      text-decoration: none; }
+    .module.scroll-menu .item a {
+      display: block;
+      color: #e57900;
+      border-left: 1px solid #d9d9d9; }
+    .module.scroll-menu .item .day {
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase; }
+    .module.scroll-menu .item .date {
+      font-size: 58px;
+      line-height: 50px;
+      text-shadow: -1px -1px 1px rgba(103, 48, 0, 0.75); }
+      .module.scroll-menu .item .date:hover {
+        color: #fe8f00; }
+    .module.scroll-menu .item .ups {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000; }
+  .module.scroll-menu .featured {
+    position: relative;
+    top: -7px;
+    width: 176px;
+    height: 103px;
+    padding-top: 12px;
+    background: url("../images/bg_featured_normal.png") top center no-repeat;
+    border-left: none; }
+    .module.scroll-menu .featured:hover {
+      background: url("../images/bg_featured_over.png") top center no-repeat; }
+    .module.scroll-menu .featured + .item a {
+      border-left: none; }
+    .module.scroll-menu .featured .day {
+      color: #fff;
+      z-index: 2;
+      position: relative; }
+    .module.scroll-menu .featured .date {
+      position: absolute;
+      top: 28px;
+      left: 40px;
+      font-size: 84px;
+      line-height: 60px;
+      font-weight: bold;
+      color: #ffb540;
+      text-shadow: none;
+      z-index: 1; }
+      .module.scroll-menu .featured .date:hover {
+        color: #ffb540; }
+    .module.scroll-menu .featured .ups {
+      color: #fff;
+      font-weight: normal;
+      text-shadow: -1px -1px 1px black;
+      margin-top: 49px;
+      z-index: 2;
+      position: relative; }
+    .module.scroll-menu .featured .logo-featured {
+      background: url("../images/logo-featured.png") center center no-repeat;
+      width: 151px;
+      height: 29px;
+      position: absolute;
+      top: 35px;
+      left: 17px;
+      z-index: 2; }
+  .module.scroll-menu .prev,
+  .module.scroll-menu .next {
+    float: left;
+    width: 32px;
+    height: 91px; }
+  .module.scroll-menu .prev {
+    background: url("../images/bg_prev_normal.png") top center no-repeat; }
+    .module.scroll-menu .prev:hover {
+      background: url("../images/bg_prev_over.png") top center no-repeat; }
+  .module.scroll-menu .next {
+    background: url("../images/bg_next_normal.png") top center no-repeat; }
+    .module.scroll-menu .next:hover {
+      background: url("../images/bg_next_over.png") top center no-repeat; }

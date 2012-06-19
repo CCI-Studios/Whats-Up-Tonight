@@ -63,12 +63,12 @@ $typekit = null;
 	<div id="wrapper">
 		
 		<div id="header"><div class="container">
-			<jdoc:include type="modules" name="header" style="xhtml" />
+			<jdoc:include type="modules" name="header" style="rounded" />
 			<div class="clear"></div>
 		</div></div>
 		
 		<div id="masthead"><div class="container">
-			<jdoc:include type="modules" name="masthead" style="xhtml" />
+			<jdoc:include type="modules" name="masthead" style="rounded" />
 			<div class="clear"></div>
 		</div></div>
 		
@@ -80,21 +80,21 @@ $typekit = null;
 			</div>
 			<?php endif; ?>
 			<div id="sidebar">
-				<jdoc:include type="modules" name="sidebar" style="xhtml" />
+				<jdoc:include type="modules" name="sidebar" style="rounded" />
 			</div>
 			<div id="grid">
-				<jdoc:include type="modules" name="grid" style="xhtml" />
+				<jdoc:include type="modules" name="grid" style="rounded" />
 				<div class="clear"></div>
 			</div>
 			<div id="bottom">
-				<jdoc:include type="modules" name="bottom" style="xhtml" />
+				<jdoc:include type="modules" name="bottom" style="rounded" />
 			</div>
 		</div></div>
 		
 		<div id="footer"><div><div class="container">
 			<span class="left span4">&copy; Whats Up Tonight.com <?php echo date('Y') ?>. All Rights Reserved.<br />
 				Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></span>
-			<jdoc:include type="modules" name="footer" style="xhtml" />
+			<jdoc:include type="modules" name="footer" style="rounded" />
 		</div></div></div>
 		
 	</div>
