@@ -83,26 +83,27 @@
 			&:first-child a {
 				background: none;
 			}
-			
-			a {
-				background: url('../images/divider_mainMenu.png') left center no-repeat;
-				padding: 0 17px 0 20px;
-				line-height: 38px;
-				color: #fff;
-				
-				img {
-					position: relative;
-					top: 5px;
-				}
-				
-				span {
-					display: inline-block;
-					*display: inline;
-					*zoom: 1;
-					padding: 0 0 0 10px;
-					vertical-align: middle;
-				}
-			}
+		}
+	}
+	
+	a {
+		background: url('../images/divider_mainMenu.png') left center no-repeat;
+		padding: 0 17px 0 20px;
+		line-height: 38px;
+		text-decoration: none; //fix for IE7
+		color: #fff;
+		
+		img {
+			position: relative;
+			top: 5px;
+		}
+		
+		span {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			padding: 0 0 0 10px;
+			vertical-align: middle;
 		}
 	}
 }
@@ -121,15 +122,15 @@
 			&:first-child {
 				border-left: none;
 			}
-			
-			a {
-				color: #fff;
-				line-height: 1em;
-				&:hover {
-					color: $orange;
-					text-decoration: none;
-				}
-			}
+		}
+	}
+	
+	a {
+		color: #fff;
+		line-height: 1em;
+		&:hover {
+			color: $orange;
+			text-decoration: none;
 		}
 	}
 }
