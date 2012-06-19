@@ -36,7 +36,8 @@
           margin: 0 0 10px 0; }
         .module_hmenu.primary ul li a img {
           position: absolute;
-          bottom: 0; }
+          bottom: 0;
+          left: 0; }
 
 .module_hmenu.category {
   font-size: 14px;
@@ -45,25 +46,27 @@
   .module_hmenu.category ul {
     background: url("../images/bg_categoryMenu.png") top center no-repeat; }
     .module_hmenu.category ul li {
-      padding: 0 0 10px 0; }
+      padding: 0 0 14px 0; }
       .module_hmenu.category ul li:hover {
-        background: url("../images/rollover_mainMenu.png") 85% 39px no-repeat; }
+        background: url("../images/rollover_mainMenu.png") 85% 39px no-repeat;
+        *zoom: 1; }
       .module_hmenu.category ul li:first-child a {
         background: none; }
-      .module_hmenu.category ul li a {
-        background: url("../images/divider_mainMenu.png") left center no-repeat;
-        padding: 0 17px 0 20px;
-        line-height: 38px;
-        color: #fff; }
-        .module_hmenu.category ul li a img {
-          position: relative;
-          top: 5px; }
-        .module_hmenu.category ul li a span {
-          display: inline-block;
-          *display: inline;
-          *zoom: 1;
-          padding: 0 0 0 10px;
-          vertical-align: middle; }
+  .module_hmenu.category a {
+    background: url("../images/divider_mainMenu.png") left center no-repeat;
+    padding: 0 17px 0 20px;
+    line-height: 38px;
+    text-decoration: none;
+    color: #fff; }
+    .module_hmenu.category a img {
+      position: relative;
+      top: 5px; }
+    .module_hmenu.category a span {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      padding: 0 0 0 10px;
+      vertical-align: middle; }
 
 .module_hmenu.secondary {
   font-size: 11px;
@@ -75,9 +78,9 @@
     border-left: 1px solid #fff; }
     .module_hmenu.secondary ul li:first-child {
       border-left: none; }
-    .module_hmenu.secondary ul li a {
-      color: #fff;
-      line-height: 1em; }
-      .module_hmenu.secondary ul li a:hover {
-        color: #e57900;
-        text-decoration: none; }
+  .module_hmenu.secondary a {
+    color: #fff;
+    line-height: 1em; }
+    .module_hmenu.secondary a:hover {
+      color: #e57900;
+      text-decoration: none; }

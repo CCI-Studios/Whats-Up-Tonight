@@ -32,8 +32,9 @@
     padding: 0 15px;
     text-transform: uppercase;
     color: #fff; }
-    .module.pageTitle > div img {
-      padding: 7px 10px 0 0; }
+  .module.pageTitle > div > div > div > div {
+    background: left center no-repeat;
+    padding: 0 0 0 30px; }
 
 /* grid mods */
 .module.grid > div {

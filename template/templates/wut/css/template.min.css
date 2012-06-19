@@ -706,7 +706,8 @@ div.chronoform {
   float: left; }
 
 #grid {
-  margin-left: -20px; }
+  margin-left: -20px;
+  *zoom: 1; }
 
 #footer {
   background: url("../images/bg_footerRepeat.png") top center repeat-x;
@@ -718,10 +719,10 @@ div.chronoform {
       padding: 15px 0 0 0;
       font-size: 10px;
       line-height: 1.5em; }
-      #footer > div > div a {
-        color: black; }
-        #footer > div > div a:hover {
-          color: black; }
+  #footer a {
+    color: black; }
+    #footer a:hover {
+      color: black; }
 
 /* @group modules */
 /* header mods */
@@ -757,8 +758,9 @@ div.chronoform {
     padding: 0 15px;
     text-transform: uppercase;
     color: #fff; }
-    .module.pageTitle > div img {
-      padding: 7px 10px 0 0; }
+  .module.pageTitle > div > div > div > div {
+    background: left center no-repeat;
+    padding: 0 0 0 30px; }
 
 /* grid mods */
 .module.grid > div {
@@ -849,7 +851,8 @@ div.chronoform {
           margin: 0 0 10px 0; }
         .module_hmenu.primary ul li a img {
           position: absolute;
-          bottom: 0; }
+          bottom: 0;
+          left: 0; }
 
 .module_hmenu.category {
   font-size: 14px;
@@ -858,25 +861,27 @@ div.chronoform {
   .module_hmenu.category ul {
     background: url("../images/bg_categoryMenu.png") top center no-repeat; }
     .module_hmenu.category ul li {
-      padding: 0 0 10px 0; }
+      padding: 0 0 14px 0; }
       .module_hmenu.category ul li:hover {
-        background: url("../images/rollover_mainMenu.png") 85% 39px no-repeat; }
+        background: url("../images/rollover_mainMenu.png") 85% 39px no-repeat;
+        *zoom: 1; }
       .module_hmenu.category ul li:first-child a {
         background: none; }
-      .module_hmenu.category ul li a {
-        background: url("../images/divider_mainMenu.png") left center no-repeat;
-        padding: 0 17px 0 20px;
-        line-height: 38px;
-        color: #fff; }
-        .module_hmenu.category ul li a img {
-          position: relative;
-          top: 5px; }
-        .module_hmenu.category ul li a span {
-          display: inline-block;
-          *display: inline;
-          *zoom: 1;
-          padding: 0 0 0 10px;
-          vertical-align: middle; }
+  .module_hmenu.category a {
+    background: url("../images/divider_mainMenu.png") left center no-repeat;
+    padding: 0 17px 0 20px;
+    line-height: 38px;
+    text-decoration: none;
+    color: #fff; }
+    .module_hmenu.category a img {
+      position: relative;
+      top: 5px; }
+    .module_hmenu.category a span {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      padding: 0 0 0 10px;
+      vertical-align: middle; }
 
 .module_hmenu.secondary {
   font-size: 11px;
@@ -888,12 +893,12 @@ div.chronoform {
     border-left: 1px solid #fff; }
     .module_hmenu.secondary ul li:first-child {
       border-left: none; }
-    .module_hmenu.secondary ul li a {
-      color: #fff;
-      line-height: 1em; }
-      .module_hmenu.secondary ul li a:hover {
-        color: #e57900;
-        text-decoration: none; }
+  .module_hmenu.secondary a {
+    color: #fff;
+    line-height: 1em; }
+    .module_hmenu.secondary a:hover {
+      color: #e57900;
+      text-decoration: none; }
 
 /* scroll-menu */
 .module.scroll-menu {
