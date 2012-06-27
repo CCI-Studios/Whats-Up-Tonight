@@ -1,5 +1,5 @@
 # repository info
-set :branch, "developer"
+set :branch, "development"
 
 # This may be the same as your `Web` server
 role :app, "ccistudios.com"
