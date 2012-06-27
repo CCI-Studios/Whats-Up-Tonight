@@ -9,7 +9,7 @@
 $menu = JSite::getMenu();
 if ($menu && $menu->getActive()) {
     $menu = $menu->getActive();
-		$page_sfx = $menu->params->get('pageclass_sfx');
+	$page_sfx = $menu->params->get('pageclass_sfx');
   	$menu = $menu->alias;
 } else {
 	$menu = "";
@@ -83,10 +83,6 @@ $typekit = null;
 			<?php endif; ?>
 			<div id="sidebar">
 				<jdoc:include type="modules" name="sidebar" style="rounded" />
-			</div>
-			<div id="grid">
-				<jdoc:include type="modules" name="grid" style="rounded" />
-				<div class="clear"></div>
 			</div>
 			<div id="bottom">
 				<jdoc:include type="modules" name="bottom" style="rounded" />

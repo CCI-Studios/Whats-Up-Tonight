@@ -380,9 +380,7 @@ table {
   float: left;
   margin-left: 20px; }
 
-.container,
-.navbar-fixed-top .container,
-.navbar-fixed-bottom .container {
+.container {
   width: 940px; }
 
 .span12 {
@@ -701,6 +699,12 @@ div.chronoform {
   /* IE10+ */
   background: linear-gradient(bottom, #d8d8d8 0%, white 48%);
   /* W3C */ }
+  body.home #content {
+    float: none;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none; }
 
 #sidebar {
   float: left; }

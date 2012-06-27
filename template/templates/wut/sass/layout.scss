@@ -21,6 +21,15 @@
 	margin-bottom: 30px;
 	
 	@include mainGradient;
+
+	body.home & {
+		float: none;
+		width: 100%;
+		padding: 0;
+		
+		border: none;
+		background: none;
+	}
 }
 
 #sidebar {
