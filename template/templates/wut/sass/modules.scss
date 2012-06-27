@@ -1,6 +1,3 @@
-@import "_variables";
-@import "_mixins";
-
 /* @group modules */
 .moduletable {}
 
@@ -106,7 +103,7 @@
 			
 			padding: 0 8px;
 						
-			a {	
+			a, span {	
 				font-size: 14px;
 				color: $orange;
 			}
