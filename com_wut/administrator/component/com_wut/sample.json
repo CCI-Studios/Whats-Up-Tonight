@@ -1,0 +1,34 @@
+{
+	'events': [
+		{ 
+			'title': "abc",
+			logo: "http:...",
+			address: "123 here",
+			city: "sarnia",
+			province: "ont",
+			postal: "n1n 1n1",
+			phone: "519 555-1234",
+			web: "http://...",
+			reviews: "http://...",
+			map: "http://..."
+		}
+
+	],
+	pagination: {
+		first: "http://...",
+		next: "http://...",
+		prev: "http://...",
+		last: "http://...",
+		pages: [
+			{ number: 5, link: "http://..." },
+			{ number: 6, link: "http://..." },
+			{ number: 7, link: "http://..." },
+			{ number: 8, link: "http://..." },
+			{ number: 9, link: "http://..." },
+			{ number: 10, link: "http://..." },
+			{ number: 11, link: "http://..." },
+			{ number: 12, link: "http://..." }
+		]
+	}
+
+}
