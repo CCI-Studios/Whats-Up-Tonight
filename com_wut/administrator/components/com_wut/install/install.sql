@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `#__wut_locations` (
 	`reviews` VARCHAR(250) NOT NULL,
 	`map` VARCHAR(250) NOT NULL,
 
-	`enabled` TINYINT(1) NOT NULL DEFAULT "0"
+	`enabled` TINYINT(1) NOT NULL DEFAULT 0
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `#__wut_ups` (
 	`description` TEXT NOT NULL COMMENT "@Filter('html')",
 	`date` DATETIME NOT NULL,
 
-	`enabled` TINYINT(1) NOT NULL DEFAULT "0",
+	`enabled` TINYINT(1) NOT NULL DEFAULT 0,
 	`wut_location_id` BIGINT(20) NOT NULL
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
