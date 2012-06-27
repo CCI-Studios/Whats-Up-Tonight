@@ -23,8 +23,8 @@ CREATE TABLE IF NOT EXISTS `#__wut_ups` (
 	`subtitle` VARCHAR(250) NOT NULL,
 	`intro` VARCHAR(100) NOT NULL,
 	`short` VARCHAR(100) NOT NULL,
-	`description` TEXT NOT NULL COMMENT "@Filter('html')",
-	`date` DATETIME NOT NULL,
+	`description` TEXT NOT NULL COMMENT '@Filter("html")',
+	`date` DATE NOT NULL,
 
 	`enabled` TINYINT(1) NOT NULL DEFAULT 0,
 	`wut_location_id` BIGINT(20) NOT NULL
