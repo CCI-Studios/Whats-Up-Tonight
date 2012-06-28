@@ -26,7 +26,7 @@ class ComWutModelUps extends ComDefaultModelDefault
 			$query->where('tbl.enabled', '=', $state->enabled);
 		}
 
-		if (isset($state->date)) {
+		if (isset($state->date) && $state->date != "") {
 			$query->where('tbl.date', '=', $state->date);
 		}
 

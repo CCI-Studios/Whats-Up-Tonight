@@ -49,5 +49,5 @@
 
 	<div class="next"><div>
 		<a href="#"></a>
-	</div></div></div>
+	</div></div>
 </div>
