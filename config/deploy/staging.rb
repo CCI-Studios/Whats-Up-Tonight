@@ -7,4 +7,4 @@ role :app, "ccistudios.com"
 # directories
 set :deploy_to, "/home/wut/subdomains/dev"
 set :public, "#{deploy_to}/public_html"
-set :extensions, %w[com_wut public template]
+set :extensions, %w[com_cci com_wut public template]
