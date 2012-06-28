@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="ups">
+		<field name="height" type="text"
+				label="Height"
+				required="true"
+				description="COM_WUT_DETAIL_HEIGHT"
+				default="140"
+				filter="integer" />
+	</fieldset>
+</config>

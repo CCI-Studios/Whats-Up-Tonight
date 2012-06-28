@@ -3,4 +3,16 @@
 	<layout title="Ups">
 		<![CDATA[Displays all Ups with pagination]]>
 	</layout>
+
+	<fields name="params">
+		<fieldset name="basic">
+
+			<field name="height" type="text"
+				label="Height"
+				required="true"
+				description="COM_WUT_DETAIL_HEIGHT"
+				default="140"
+				filter="integer" />
+		</fieldset>
+	</fields>
 </metadata>

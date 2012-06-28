@@ -8,8 +8,7 @@ class ComWutModelLocations extends ComDefaultModelDefault
 		parent::__construct($config);
 
 		$this->_state
-			->remove('sort')->insert('sort', 'cmd', 'title')
-			->remove('direction')->insert('direction', 'cmd', 'asc');
+			->remove('sort')->insert('sort', 'cmd', 'title');
 	}
 
 }

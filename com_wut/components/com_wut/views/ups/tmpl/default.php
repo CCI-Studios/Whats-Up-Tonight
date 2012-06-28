@@ -1,23 +1,26 @@
 
 <div class="row">
-<? for($i=0; $i < 7; $i++): ?>
+<? foreach($ups as $up): ?>
 	<div class="module span4 grid">
-		<div style="height: 140px; "><div><div>
-			<div class="custom"><div>
-				<h3>Wing Night</h3>
+		<div><div><div>
+			<div style="height: <?= $height ?>" class="custom"><div>
+				<h3><?= $up->title ?></h3>
 				
 				<div class="logo"><img src="/images/logos/logo_scroggies.png" width="127" height="98" alt="logo scroggies"></div>
 
-				<div class="title"><h4>Eats/Drinks</h4></div>
+				<!-- <div class="title"><h4>Eats/Drinks</h4></div> -->
 
-				<div class="description">Hello World</div>
+				<div class="description"><?= $up->intro ?></div>
 
-				<div><button>Details<img src="/images/arrowDown.png" width="10" height="8" alt="arrowDown"></button></div>
+				<div><button>
+					Details
+					<img src="/images/arrowDown.png" width="10" height="8" alt="arrowDown">
+				</button></div>
 
 			</div></div>
 		</div></div></div>
 	</div>
-<? endfor; ?>
+<? endforeach; ?>
 </div>
 
 <div class="pagination">

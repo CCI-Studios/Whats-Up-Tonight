@@ -18,7 +18,10 @@
 
 				<li>
 					<label for="field_location"><?= @text('Location') ?>:</label>
-					<input type="text" name="wut_location_id" id="field_location" value="<?=$up->wut_location_id?>" />
+					<?= @helper('listbox.locations', array(
+						'selected'	=> $up->wut_location_id,
+						'attribs'	=> array('class' => 'required')
+					)) ?>
 				</li>
 
 				<li>
