@@ -89,9 +89,10 @@
 .pagination {
 	margin: 0;
 	text-align: center;
-	margin: 0 0 2em 0;
+	margin: 0;
 	
-	ul {
+	ul.pages {
+		float: none;
 		padding: 0;
 		margin: 0;
 		list-style: none;
