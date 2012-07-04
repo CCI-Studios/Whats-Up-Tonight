@@ -5,11 +5,11 @@ class ModWutcategoriesHtml extends ModDefaultHtml
 	
 	public function display()
 	{
-		$model = $this->getService('com://admin/wut.model.categories');
-		$categories = $model->getList();
-		$this->assign('categories', $categories);
+	 	$controller = KService::get('com://site/wut.controller.category')
+	 		->view('categories')
+	 		->layout('widget');
 
-	 	return parent::display();	
+	 	return $controller->display();	
 	}
 	
 }

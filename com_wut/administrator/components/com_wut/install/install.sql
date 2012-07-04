@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `#__wut_categories` (
 	`wut_category_id` SERIAL,
 
 	`title` VARCHAR(250) NOT NULL,
-	`logo` VARCHAR(250) NOT NULL,
+	`icon` VARCHAR(250) NOT NULL,
 
 	`enabled` TINYINT(1) NOT NULL
 

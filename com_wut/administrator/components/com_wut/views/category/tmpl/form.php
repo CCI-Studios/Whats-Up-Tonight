@@ -21,19 +21,19 @@
 
 	<div class="width-40 fltrt">
 		<fieldset class="adminform">
-			<legend><?= @text('Logo'); ?></legend>
-			<? if ($category->logo): ?>
-				<img src="/media/com_wut/uploads/icons/<?= $category->logo ?>" />
+			<legend><?= @text('Icon'); ?></legend>
+			<? if ($category->icon): ?>
+				<img src="/media/com_wut/uploads/icons/<?= $category->icon ?>" />
 
 				<ul class="adminformlist">
 					<li>
 						<label for="field_delete"><?= @text('Delete') ?>:</label>
-						<input type="checkbox" name="logo_delete" />
+						<input type="checkbox" name="icon_delete" />
 					</li>
 				</ul>
 			<? else: ?>
 				<p>Images should be 200x50 pixels and maximum of 50kbs.</p>
-				<input type="file" name="logo_upload" />
+				<input type="file" name="icon_upload" />
 			<? endif; ?>
 		</fieldset>
 	</div>

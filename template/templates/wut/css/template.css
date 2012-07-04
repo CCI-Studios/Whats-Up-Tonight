@@ -823,35 +823,6 @@ div.chronoform {
           bottom: 0;
           left: 0; }
 
-.module_hmenu.category {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 0; }
-  .module_hmenu.category ul {
-    background: url("../images/bg_categoryMenu.png") top center no-repeat; }
-    .module_hmenu.category ul li {
-      padding: 0 0 14px 0; }
-      .module_hmenu.category ul li:hover {
-        background: url("../images/rollover_mainMenu.png") 85% 39px no-repeat;
-        *zoom: 1; }
-      .module_hmenu.category ul li:first-child a {
-        background: none; }
-  .module_hmenu.category a {
-    background: url("../images/divider_mainMenu.png") left center no-repeat;
-    padding: 0 17px 0 20px;
-    line-height: 38px;
-    text-decoration: none;
-    color: #fff; }
-    .module_hmenu.category a img {
-      position: relative;
-      top: 5px; }
-    .module_hmenu.category a span {
-      display: inline-block;
-      *display: inline;
-      *zoom: 1;
-      padding: 0 0 0 10px;
-      vertical-align: middle; }
-
 .module_hmenu.secondary {
   font-size: 11px;
   font-weight: lighter;
@@ -895,23 +866,20 @@ div.chronoform {
   text-shadow: none; }
 
 button,
-input[type="submit"] {
+input[type="submit"],
+.button {
   background: url("../images/button.png") center center no-repeat;
   border: none;
-  width: 120px;
+  width: 86px;
   height: 41px;
+  line-height: 41px;
   padding: 0 17px;
   color: #fff;
   text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
   text-transform: uppercase; }
   button img,
-  input[type="submit"] img {
+  input[type="submit"] img,
+  .button img {
     position: absolute;
     top: 16px;
     right: 20px; }
-
-.grid button {
-  position: absolute;
-  bottom: -20px;
-  left: 90px;
-  text-align: left; }

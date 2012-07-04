@@ -18,10 +18,10 @@
 				adsfasdffsda
 			</div>
 
-			<div class="details"><button>
+			<div class="details"><a class="button" href="<?= @route("view=up&{$itemid}&id={$up->id}") ?>">
 				Details
 				<img src="/images/arrowDown.png" width="10" height="8" alt="arrowDown">
-			</button></div>
+			</a></div>
 		</div>
 	</div></div>
 <? endforeach; ?>

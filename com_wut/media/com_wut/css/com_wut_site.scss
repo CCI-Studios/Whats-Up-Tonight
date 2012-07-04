@@ -60,7 +60,10 @@ $border: 1px solid #d9d9d9;
 
 			text-align: center;
 
-			button {
+			.button {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
 				position: relative;
 				text-align: left;
 			}
@@ -196,4 +199,50 @@ $border: 1px solid #d9d9d9;
 		}
 	}
 	
+}
+
+.mod_wutcategories {	
+	ul {
+		background: url('../images/bg_categoryMenu.png') top center no-repeat;
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+		text-transform: uppercase;		
+		
+		li {
+			display: inline-block;
+			padding-bottom: 14px;
+			*display: inline;
+			*zoom: 1;
+
+			&:hover {
+				background: url('../images/rollover_mainMenu.png') 85% 39px no-repeat;
+				*zoom: 1;
+			}
+			&:first-child a {
+				background: none;
+			}
+		}
+
+		a {
+			background: url('../images/divider_mainMenu.png') left center no-repeat;
+			padding: 0 17px 0 20px;
+			line-height: 38px;
+			text-decoration: none; //fix for IE7
+			color: #fff;
+			
+			img {
+				position: relative;
+				top: 5px;
+			}
+			
+			span {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				padding: 0 0 0 10px;
+				vertical-align: middle;
+			}
+		}
+	}
 }

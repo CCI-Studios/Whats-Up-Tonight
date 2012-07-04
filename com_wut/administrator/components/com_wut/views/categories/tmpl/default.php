@@ -30,8 +30,8 @@
 			<tr>
 				<td align="center"><?= @helper('grid.checkbox', array('row'=>$category)) ?></td>
 				<td align="center">
-					<? if ($category->logo): ?>
-						<img src="/media/com_wut/uploads/icons/<?= $category->logo ?>" />
+					<? if ($category->icon): ?>
+						<img src="/media/com_wut/uploads/icons/<?= $category->icon ?>" />
 					<? endif; ?>
 				</td>
 				<td><a href="<?= @route("view=category&id={$category->id}") ?>">

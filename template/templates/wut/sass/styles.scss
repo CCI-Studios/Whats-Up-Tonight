@@ -11,11 +11,13 @@
 ::selection { background: $orange; color:#fff; text-shadow: none; }
 
 button,
-input[type="submit"] {
+input[type="submit"],
+.button {
 	background: url('../images/button.png') center center no-repeat;
 	border: none;
-	width: 120px;
+	width: 86px;
 	height: 41px;
+	line-height: 41px;
 	padding: 0 17px;
 	
 	color: #fff;
@@ -27,14 +29,6 @@ input[type="submit"] {
 		top: 16px;
 		right: 20px;
 	}
-}
-
-.grid button {
-	position: absolute;
-	bottom: -20px;
-	left: 90px;
-	
-	text-align: left;
 }
 
 input[type="submit"] {
