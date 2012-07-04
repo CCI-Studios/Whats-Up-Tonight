@@ -14,7 +14,7 @@
 			<ul class="adminformlist">
 				<li>
 					<label for="field_title"><?= @text('Title') ?>:</label>
-					<input image="text" name="title" id="field_title" value="<?=$location->title;?>" />
+					<input image="text" name="title" id="field_title" value="<?=$category->title;?>" />
 				</li>
 		</fieldset>
 	</div>
@@ -23,7 +23,14 @@
 		<fieldset class="adminform">
 			<legend><?= @text('Logo'); ?></legend>
 			<? if ($category->logo): ?>
+				<img src="/media/com_wut/uploads/icons/<?= $category->logo ?>" />
 
+				<ul class="adminformlist">
+					<li>
+						<label for="field_delete"><?= @text('Delete') ?>:</label>
+						<input type="checkbox" name="logo_delete" />
+					</li>
+				</ul>
 			<? else: ?>
 				<p>Images should be 200x50 pixels and maximum of 50kbs.</p>
 				<input type="file" name="logo_upload" />

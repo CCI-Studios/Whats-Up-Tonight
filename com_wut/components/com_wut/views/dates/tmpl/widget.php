@@ -1,0 +1,21 @@
+<style src="media://com_wut/css/com_wut_site.css" />
+
+<div class="mod_wutdates">
+	<div class="prev"><div>
+		<a href="<?= @route("view=ups&{$itemid}&date={$prev}") ?>"></a>
+	</div></div>
+
+	<? foreach($days as $day): ?>
+		<div class="item first <?= $day['classes'] ?>"><a href="<?= @route("view=ups&{$itemid}&date=". date('Y-m-d', $day['date'])) ?>">
+			<div class="day"><?= date('l', $day['date']) ?></div>
+			<div class="date"><?= date('d', $day['date']) ?></div>
+			<div class="ups"><?= $day['count'] ?><?= ($day['count'] > 1)? 'UPs':'UP' ?></div>
+
+			<div class="logo-featured"></div>
+		</a></div>
+	<? endforeach; ?>
+
+	<div class="next"><div>
+		<a href="<?= @route("view=ups&{$itemid}&date={$next}") ?>"></a>
+	</div></div>
+</div>

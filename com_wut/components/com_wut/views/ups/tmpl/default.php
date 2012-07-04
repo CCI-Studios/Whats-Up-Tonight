@@ -2,8 +2,8 @@
 
 <div class="row com_wut-ups">
 <? foreach($ups as $up): ?>
-	<div class="module span4 grid"><div><div>
-		<div style="height: <?= $height ?>" class="custom">
+	<div class="span4"><div>
+		<div style="height: <?= $height ?>">
 			<h3><?= $up->title ?></h3>
 			
 			<div class="description1">
@@ -18,12 +18,12 @@
 				adsfasdffsda
 			</div>
 
-			<div><button>
+			<div class="details"><button>
 				Details
 				<img src="/images/arrowDown.png" width="10" height="8" alt="arrowDown">
 			</button></div>
 		</div>
-	</div></div></div>
+	</div></div>
 <? endforeach; ?>
 </div>
 

@@ -29,8 +29,12 @@
 			foreach ($categories as $category): ?>
 			<tr>
 				<td align="center"><?= @helper('grid.checkbox', array('row'=>$category)) ?></td>
-				<td align="center"><?= $category->logo ?></td>
-				<td><a href="<?= @route("view=up&id={$category->id}") ?>">
+				<td align="center">
+					<? if ($category->logo): ?>
+						<img src="/media/com_wut/uploads/icons/<?= $category->logo ?>" />
+					<? endif; ?>
+				</td>
+				<td><a href="<?= @route("view=category&id={$category->id}") ?>">
 					<?= $category->title ?>
 				</a></td>
 				<td align="center"><?= @helper('grid.enable', array('row'=>$category)) ?></td>
