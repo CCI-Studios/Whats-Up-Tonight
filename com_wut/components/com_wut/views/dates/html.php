@@ -48,6 +48,7 @@ class ComWutViewDatesHtml extends ComDefaultViewHtml
 
 		$this->assign('days', $days);
 		$this->assign('itemid', $this->_getItemID());
+		$this->assign('current', $current);
 		$this->assign('prev', date('Y-m-d', strtotime($current .' -7 days')));
 		$this->assign('next', date('Y-m-d', strtotime($current .' +7 days')));
 

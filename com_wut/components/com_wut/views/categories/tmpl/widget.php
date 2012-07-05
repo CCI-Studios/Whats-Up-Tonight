@@ -2,7 +2,7 @@
 
 <div class="mod_wutcategories">
 	<ul>
-		<li><a href="#">
+		<li><a href="<?= @route("view=ups&{$itemid}&category_id=") ?>">
 			<img src="/media/com_wut/images/icon_all-2x.png" width="19" height="19" alt="All Categories">
 			<span>All</span>
 		</a></li>

@@ -1,0 +1,30 @@
+<div class="row com_wut-ups">
+<? foreach($ups as $up): ?>
+	<div class="span4"><div>
+		<div style="height: <?= $height ?>">
+			<h3><?= $up->title ?></h3>
+			
+			<div class="description1">
+				<div class="logo">
+					<img src="/images/logos/logo_scroggies.png" width="127" height="98" alt="logo scroggies">
+				</div>
+
+				<div class="description"><?= $up->intro ?></div>
+			</div>
+
+			<div class="description2">
+				<h4><?= $up->subtitle ?></h4>
+				<p><?= $up->short ?></p>
+				<p><a href="<?= @route("view=up&{$upid}&id={$up->id}") ?>">
+					<?= @text('Read more') ?>
+				</a></p>
+			</div>
+
+			<div class="details"><div class="button">
+				Details
+				<img src="/images/arrowDown.png" width="10" height="8" alt="arrowDown">
+			</div></div>
+		</div>
+	</div></div>
+<? endforeach; ?>
+</div>

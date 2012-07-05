@@ -8,7 +8,8 @@ class ComWutViewUpsHtml extends ComDefaultViewHtml
 		$this->assign('height', '140px');
 		$this->_pageTitle();
 
-		$this->assign('itemid', $this->_getItemID());
+		$this->assign('upsID', $this->_getItemID('index.php?option=com_wut&view=ups'));
+		$this->assign('upID', $this->_getItemID('index.php?option=com_wut&view=up'));
 
 		return parent::display();
 	}
@@ -39,12 +40,12 @@ class ComWutViewUpsHtml extends ComDefaultViewHtml
 		$doc->setTitle($title);
 	}
 
-	protected function _getItemID()
+	protected function _getItemID($link)
 	{
 		$menu = JSite::getMenu('site');
 		$item = $menu->getItems(
 				'link', 
-				'index.php?option=com_wut&view=ups', 
+				$link, 
 				true);
 
 		if ($item) {
