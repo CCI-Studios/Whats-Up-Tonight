@@ -5,6 +5,9 @@ class ComWutViewCategoriesHtml extends ComDefaultViewHtml
 
 	public function display()
 	{
+		$date = KRequest::get('get.date', 'date', date('Y-m-d'));
+
+		$this->assign('date', "&date={$date}");
 		$this->assign('itemid', $this->_getItemID());
 
 		return parent::display();

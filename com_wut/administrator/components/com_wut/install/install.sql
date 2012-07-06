@@ -26,6 +26,12 @@ CREATE TABLE IF NOT EXISTS `#__wut_ups` (
 	`description` TEXT NOT NULL COMMENT '@Filter("html")',
 	`date` DATE NOT NULL,
 
+	`eats` TINYINT(1) NOT NULL,
+	`drinks` TINYINT(1) NOT NULL,
+	`entertainment` TINYINT(1) NOT NULL,
+	`events` TINYINT(1) NOT NULL,
+	`otbs` TINYINT(1) NOT NULL,
+
 	`enabled` TINYINT(1) NOT NULL DEFAULT 0,
 	`wut_location_id` BIGINT(20) NOT NULL
 

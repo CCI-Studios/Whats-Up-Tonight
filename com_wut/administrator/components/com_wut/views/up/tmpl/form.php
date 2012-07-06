@@ -59,4 +59,62 @@
 			)) ?>
 		</fieldset>
 	</div>
+
+	<div class="width-40 fltrt">
+		<fieldset class="adminform">
+			<legend><?= @text('Categories') ?></legend>
+
+			<ul class="adminformlist">
+				<li>
+					<label for="field_eats"><?= @text('Eats') ?>:</label>
+					<input type="hidden" name="eats" value="0" />
+					<input type="checkbox" 
+						name="eats" 
+						id="field_eats" 
+						value="1" 
+						<?= ($up->eats)? 'checked="checked"': ''?> />
+				</li>
+
+				<li>
+					<label for="field_drinks"><?= @text('Drinks') ?>:</label>
+					<input type="hidden" name="drinks" value="0" />
+					<input type="checkbox" 
+						name="drinks" 
+						id="field_drinks" 
+						value="1" 
+						<?= ($up->drinks)? 'checked="checked"': ''?> />
+				</li>
+
+				<li>
+					<label for="field_entertainment"><?= @text('Entertainment') ?>:</label>
+					<input type="hidden" name="entertainment" value="0" />
+					<input type="checkbox" 
+						name="entertainment" 
+						id="field_entertainment" 
+						value="1" 
+						<?= ($up->entertainment)? 'checked="checked"': ''?> />
+				</li>
+
+				<li>
+					<label for="field_events"><?= @text('Events') ?>:</label>
+					<input type="hidden" name="events" value="0" />
+					<input type="checkbox" 
+						name="events" 
+						id="field_events" 
+						value="1" 
+						<?= ($up->events)? 'checked="checked"': ''?> />
+				</li>
+
+				<li>
+					<label for="field_otbs"><?= @text('OTBS') ?>:</label>
+					<input type="hidden" name="otbs" value="0" />
+					<input type="checkbox" 
+						name="otbs" 
+						id="field_otbs" 
+						value="1" 
+						<?= ($up->otbs)? 'checked="checked"': ''?> />
+				</li>
+			</ul>
+		</fieldset>
+	</div>
 </form>
