@@ -1,7 +1,15 @@
 <?php
 
-class ComWutDatabaseRowLocation extends KDatabaseRowDefault
+class ComWutDatabaseRowLocation extends ComCciDatabaseRowRelated
 {
+
+	public function __construct(KConfig $config)
+	{
+		parent::__construct($config);
+
+		$this->has_many('ups', array(
+		));
+	}
 
 	public function fullAddress()
 	{
@@ -27,6 +35,21 @@ class ComWutDatabaseRowLocation extends KDatabaseRowDefault
 		}
 
 		return parent::save();
+	}
+
+	public function image()
+	{
+		if ($this->logo) {
+			return "<img 
+				title='{$this->title}' 
+				src='/media/com_wut/uploads/logos/{$this->logo}' 
+				width='125' />";
+		} else {
+			return "<img 
+				title='{$this->title}' 
+				src='/media/com_wut/images/default_logo.png' 
+				width='125' />";
+		}
 	}
 
 }
