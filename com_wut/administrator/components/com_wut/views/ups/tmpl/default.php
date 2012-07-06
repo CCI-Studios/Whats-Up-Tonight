@@ -31,7 +31,7 @@
 			<tr>
 				<td align="center"><?= @helper('grid.checkbox', array('row'=>$up)) ?></td>
 				<td><a href="<?= @route("view=up&id={$up->id}") ?>">
-					<?= $up->title ?>
+					<?= $up->title .' - '. $up->location->title;?>
 				</a></td>
 				<td align="center"><?= $up->wut_location_id ?></td>
 				<td align="center"><?= $up->date ?></td>

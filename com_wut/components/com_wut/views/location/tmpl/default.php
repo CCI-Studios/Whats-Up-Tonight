@@ -4,17 +4,15 @@
 <div>
 	<h1><?= $location->title ?></h1>
 
-	<p class="left">logo</p>
-	<div class="clear"></div>
+	<?= @template('simple') ?>
 
 	<h2>Ups</h2>
 	<ul>
-		<li>adsf</li>
-		<li>adsf</li>
-		<li>adsf</li>
-		<li>adsf</li>
-		<li>adsf</li>
-		<li>adsf</li>
+		<? foreach($location->ups as $up): ?>
+			<li><a href="<?= @route("view=up&id={$up->id}") ?>">
+				<?= $up->title .' - '. $up->date ?>
+			</a></li>
+		<? endforeach; ?>
 	</ul>
 
 	<p>Return to <a href="<?= @route('view=locations') ?>">Locations</a>.</p>

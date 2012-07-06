@@ -10,7 +10,8 @@ class ComWutModelUps extends ComDefaultModelDefault
 		$this->_state
 			->remove('sort')->insert('sort', 'cmd', 'date')
 			->insert('enabled', 'int')
-			->insert('past', 'boolean', true)
+			->insert('category', 'cmd')
+			->insert('wut_location_id', 'int')
 			->insert('date', 'date');
 	}
 
@@ -18,16 +19,20 @@ class ComWutModelUps extends ComDefaultModelDefault
 	{
 		$state = $this->_state;
 
-		if (isset($state->past) && $state->past == 1) {
-			$query->where('tbl.date', '>=', date('Y-m-d'));
-		}
-
 		if (is_numeric($state->enabled)) {
 			$query->where('tbl.enabled', '=', $state->enabled);
 		}
 
 		if (isset($state->date) && $state->date != "") {
 			$query->where('tbl.date', '=', $state->date);
+		}
+
+		if (isset($state->category) && $state->category != "") {
+			$query->where("tbl.{$state->category}", '=', '1');
+		}
+
+		if (is_numeric($state->wut_location_id)) {
+			$query->where('tbl.wut_location_id', '=', $state->wut_location_id);
 		}
 
 		parent::_buildQueryWhere($query);

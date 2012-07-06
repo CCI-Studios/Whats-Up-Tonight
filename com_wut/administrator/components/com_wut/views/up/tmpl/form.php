@@ -13,13 +13,13 @@
 			<ul class="adminformlist">
 				<li>
 					<label for="field_title"><?= @text('Title') ?>:</label>
-					<input image="text" name="title" id="field_title" value="<?=$up->title;?>" />
+					<input type="text" name="title" id="field_title" value="<?=$up->title;?>" />
 				</li>
 
 				<li>
 					<label for="field_location"><?= @text('Location') ?>:</label>
 					<?= @helper('listbox.locations', array(
-						'selected'	=> $up->wut_location_id,
+						'checked'	=> $up->wut_location_id,
 						'attribs'	=> array('class' => 'required')
 					)) ?>
 				</li>
@@ -37,17 +37,17 @@
 			<ul class="adminformlist">
 				<li>
 					<label for="field_subtitle"><?= @text('Subtitle') ?>:</label>
-					<input image="text" name="subtitle" id="field_subtitle" value="<?=$up->subtitle;?>" />
+					<input type="text" name="subtitle" id="field_subtitle" value="<?=$up->subtitle;?>" />
 				</li>
 
 				<li>
 					<label for="field_intro"><?= @text('Intro') ?>:</label>
-					<input image="text" name="intro" id="field_intro" value="<?=$up->intro;?>" />
+					<input type="text" name="intro" id="field_intro" value="<?=$up->intro;?>" />
 				</li>
 
 				<li>
 					<label for="field_short"><?= @text('Short') ?>:</label>
-					<input image="text" name="short" id="field_short" value="<?=$up->short;?>" />
+					<input type="text" name="short" id="field_short" value="<?=$up->short;?>" />
 				</li>
 			</ul>
 		</fieldset>

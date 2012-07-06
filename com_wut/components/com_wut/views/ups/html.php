@@ -8,8 +8,8 @@ class ComWutViewUpsHtml extends ComDefaultViewHtml
 		$this->assign('height', '140px');
 		$this->_pageTitle();
 
-		$this->assign('upsID', $this->_getItemID('index.php?option=com_wut&view=ups'));
-		$this->assign('upID', $this->_getItemID('index.php?option=com_wut&view=up'));
+		$this->assign('upsid', $this->_getItemID('index.php?option=com_wut&view=ups'));
+		$this->assign('upid', $this->_getItemID('index.php?option=com_wut&view=up'));
 
 		return parent::display();
 	}

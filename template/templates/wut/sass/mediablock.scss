@@ -1,0 +1,14 @@
+.mediablock {
+	.media {
+		float: left;
+		margin-right: 5px;
+	}
+
+	.content {
+		float: left;
+	}
+
+	.media + .content {
+
+	}
+}

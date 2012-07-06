@@ -33,11 +33,7 @@
 			<tr>
 				<td align="center"><?= @helper('grid.checkbox', array('row'=>$location)) ?></td>
 				<td align="center">
-					<? if ($location->logo): ?>
-						<img src="/media/com_wut/uploads/logos/<?= $location->logo ?>" />
-					<? else: ?>
-						<img src="/media/com_wut/images/default_logo.png" />
-					<? endif; ?>
+					<?= $location->image(); ?>
 				</td>
 				<td><a href="<?=@route("view=location&id={$location->id}")?>">
 					<?= @escape($location->title) ?>

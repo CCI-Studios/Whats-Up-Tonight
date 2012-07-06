@@ -72,7 +72,7 @@
 					</li>
 				</ul>
 			<? else: ?>
-				<p>Images should be 200x50 pixels and maximum of 50kbs.</p>
+				<p>Images should be 150 pixels wide and maximum of 50kbs.</p>
 				<input type="file" name="logo_upload" />
 			<? endif; ?>
 		</fieldset>
