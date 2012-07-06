@@ -8,7 +8,10 @@ class ComWutControllerUp extends ComDefaultControllerDefault
 
 		$this->_request->enabled = 1;
 		$this->_request->limit = 9;
-		$this->_request->date = KRequest::get('get.date', 'date', date('Y-m-d'));
+
+		if ($this->_request->view == 'ups') {
+			$this->_request->date = KRequest::get('get.date', 'date', date('Y-m-d'));
+		}
 
 		return parent::getRequest();
 	}
