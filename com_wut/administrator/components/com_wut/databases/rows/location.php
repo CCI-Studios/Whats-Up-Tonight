@@ -47,7 +47,7 @@ class ComWutDatabaseRowLocation extends ComCciDatabaseRowRelated
 		} else {
 			return "<img 
 				title='{$this->title}' 
-				src='/media/com_wut/images/default_logo.png' 
+				src='/images/logos/logo-2x.png' 
 				width='125' />";
 		}
 	}
