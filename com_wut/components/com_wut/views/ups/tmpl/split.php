@@ -11,14 +11,6 @@
 							<?= $up->location->image(); ?>
 						</div>
 
-						<p>
-							<?= ($up->eats)? 'eats':'' ?>
-							<?= ($up->drinks)? 'drinks':'' ?>
-							<?= ($up->entertainment)? 'entertainment':'' ?>
-							<?= ($up->events)? 'events':'' ?>
-							<?= ($up->otbs)? 'otbs':'' ?>
-						</p>
-
 						<div class="description"><?= $up->intro ?></div>
 					</div>
 

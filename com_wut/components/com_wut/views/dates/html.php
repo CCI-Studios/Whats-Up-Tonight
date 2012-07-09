@@ -6,38 +6,20 @@ class ComWutViewDatesHtml extends ComDefaultViewHtml
 	public function display()
 	{
 		$current = KRequest::get('get.date','date', date('Y-m-d'));
+		$days = array();
 
-		$days = array(
-			array(
-				'date'		=> strtotime(date('Y-m-d', strtotime($current .' -3 days'))),
-				'count'		=> '12',
-			),
-			array(
-				'date' => strtotime(date('Y-m-d', strtotime($current .' -2 days'))),
-				'count'		=> '1',
-			),
-			array(
-				'date' => strtotime(date('Y-m-d', strtotime($current .' -1 days'))),
-				'count'		=> '12',
-			),
-			array(
-				'date' => strtotime(date('Y-m-d', strtotime($current))),
-				'count'		=> '3',
-			),
-			array(
-				'date' => strtotime(date('Y-m-d', strtotime($current .' +1 days'))),
-				'count'		=> '12',
-			),
-			array(
-				'date' => strtotime(date('Y-m-d', strtotime($current .' +2 days'))),
-				'count'		=> '16',
-			),
-			array(
-				'date' => strtotime(date('Y-m-d', strtotime($current .' +3 days'))),
-				'count'		=> '4',
-			),
+		for ($i = -3; $i < 4; $i++) {
+			$date = date('Y-m-d', strtotime($current ." $i days"));
+			$model = $this->getService('com://site/wut.model.ups');
+			$model->date($date);
+			$model->getList();
 
-		);
+			$day = array(
+				'date'	=> strtotime($date),
+				'count'	=> $model->getTotal(),
+			);
+			$days[] = $day;
+		}
 
 		$this->assign('days', $days);
 		$this->assign('itemid', $this->_getItemID());

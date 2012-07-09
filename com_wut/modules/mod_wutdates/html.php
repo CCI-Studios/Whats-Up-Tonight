@@ -7,7 +7,7 @@ class ModWutdatesHtml extends ModDefaultHtml
 	{
 	 	$controller = KService::get('com://site/wut.controller.date')
 	 		->view('dates')
-	 		->layout('widget');
+	 		->layout('default');
 
 	 	return $controller->display();
 	}
