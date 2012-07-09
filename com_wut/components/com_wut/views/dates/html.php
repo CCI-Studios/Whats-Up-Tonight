@@ -11,7 +11,7 @@ class ComWutViewDatesHtml extends ComDefaultViewHtml
 		for ($i = -3; $i < 4; $i++) {
 			$date = date('Y-m-d', strtotime($current ." $i days"));
 			$model = $this->getService('com://site/wut.model.ups');
-			$model->date($date);
+			$model->set('date', $date);
 			$model->getList();
 
 			$day = array(
