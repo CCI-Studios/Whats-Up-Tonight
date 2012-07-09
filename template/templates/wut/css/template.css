@@ -563,7 +563,8 @@ body, select, input, textarea {
   font-size: 14px; }
 
 body {
-  background: #c95500; }
+  background: #c95500;
+  min-width: 960px; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
