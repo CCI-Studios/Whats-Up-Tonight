@@ -1,5 +1,9 @@
-<div class="span4"><div>
-	<div style="height: <?= $height ?>">
+<? if (!isset($up)) {
+	$up = $ups->current();
+} ?>
+
+<div class="span4 com_wut-upInstance"><div>
+	<div <?= (isset($height))? "style='height: $height'":'' ?>>
 		<h3><?= $up->title ?></h3>
 		
 		<div class="description1">

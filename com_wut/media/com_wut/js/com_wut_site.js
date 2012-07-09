@@ -77,7 +77,7 @@ window.addEvent('domready', function() {
 	container.addEvent('click:relay(.mod_wutcategories a)', clickedCategory);
 	container.addEvent('click:relay(.pagination a)', clickedPage);
 
-	container.addEvent('click:relay(.com_wut-ups .button)', function(event) {
+	container.addEvent('click:relay(.com_wut-upInstance .button)', function(event) {
 		event.preventDefault();
 		this.getParent('.span4').toggleClass('open');
 	});

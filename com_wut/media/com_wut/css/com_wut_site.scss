@@ -20,23 +20,19 @@ $border: 1px solid #d9d9d9;
 
 .com_wut-ups {
 	min-height: 225px;
-	
-	> div { // container
-		> div > div {
-			min-height: 125px;
-			background-color: #fff;
-			border-radius: 5px;
-			border: $border;	
-			padding: 13px 19px 30px;
-			margin-bottom: 3em;
-			font-size: 14px;
-			color: #4c4c4c;
-			position: relative;
-			
-			@include mainGradient;
-		}
-	}
+}
 
+.com_wut-upInstance > div {
+	min-height: 125px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: $border;	
+	padding: 13px 19px 30px;
+	margin-bottom: 3em;
+	font-size: 14px;
+	color: #4c4c4c;
+	position: relative;
+	@include mainGradient;
 		
 	h3 {
 		@include underline;
@@ -62,18 +58,6 @@ $border: 1px solid #d9d9d9;
 	.description1 { height: 102px; opacity: 1; }
 	.description2 { height: 0; }
 
-	.open {
-		.description1 { height: 0; opacity: 0; }
-		.description2 { height: 102px; }
-
-		.button img {
-			-webkit-transform: rotate(180deg);
-			-moz-transform: rotate(180deg);
-			transform: rotate(180deg);
-		}
-	}
-
-
 	.details {
 		position: absolute;
 		bottom: -20px;
@@ -96,6 +80,17 @@ $border: 1px solid #d9d9d9;
 				transition: transform 0.3s linear;
 			}
 		}
+	}
+}
+
+.com_wut-upInstance.open {
+	.description1 { height: 0; opacity: 0; }
+	.description2 { height: 102px; }
+
+	.button img {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 }
 
