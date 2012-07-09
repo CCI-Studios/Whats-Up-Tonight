@@ -12,7 +12,16 @@ class ComWutModelUps extends ComDefaultModelDefault
 			->insert('enabled', 'int')
 			->insert('category', 'cmd')
 			->insert('wut_location_id', 'int')
+			->insert('random', 'boolean')
 			->insert('date', 'date');
+	}
+
+	protected function _buildQueryOrder(KDatabaseQuery $query) {
+		if (isset($this->_state->random) && $this->_state->random) {
+			$query->order('RAND()');
+		} else {
+			parent::_buildQueryOrder($query);
+		}
 	}
 
 	protected function _buildQueryWhere(KDatabaseQuery $query)
