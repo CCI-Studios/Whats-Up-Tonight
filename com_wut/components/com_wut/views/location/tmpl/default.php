@@ -14,6 +14,9 @@
 			</a></li>
 		<? endforeach; ?>
 	</ul>
+	<? if (!count($location->ups)): ?>
+		<p>No UPs for this location</p>
+	<? endif; ?>
 
 	<p>Return to <a href="<?= @route('view=locations') ?>">Locations</a>.</p>
 </div>

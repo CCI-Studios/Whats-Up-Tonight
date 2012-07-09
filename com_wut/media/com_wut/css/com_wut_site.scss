@@ -101,46 +101,60 @@ $border: 1px solid #d9d9d9;
 
 /* scroll-menu */
 .mod_wutdates {
-	.item {
-		background: url('../images/bg_day.png') top center repeat-x;
-		float: left;
-		width: 116px;
-		text-align: center;
-		height: 86px;
-		padding: 4px 0 1px;
-		&.first a,
-		&.featured a {
-			border-left: none;
-		}
-		&:hover * {
-			text-decoration: none;
-		}
-		
-		a {
-			display: block;
-			color: $orange;
-			border-left: $border;
-		}
-		
-		.day {
-			font-size: 16px;
-			line-height: 16px;
-			text-transform: uppercase;
+	margin: 0 32px;
+	position: relative;
+
+
+	.dates {
+		overflow: hidden;
+
+		> div { 
+			width: 200%;
+			position: relative;
 		}
 
-		.date {
-			font-size: 58px;
-			line-height: 50px;
-			text-shadow: -1px -1px 1px $text-shadow;
-			&:hover {
-				color: #fe8f00;
+		> div > div {
+			background: url('../images/bg_day.png') top center repeat-x;
+			float: left;
+			width: 125px;
+			text-align: center;
+			height: 86px;
+			padding: 4px 0 1px;
+
+			&:first-child a,
+			&.featured a {
+				border-left: none;
 			}
-		}
+			&:hover * {
+				text-decoration: none;
+			}
+			
+			a {
+				display: block;
+				color: $orange;
+				border-left: $border;
+			}
+			
+			.day {
+				font-size: 16px;
+				line-height: 16px;
+				text-transform: uppercase;
+			}
 
-		.ups {
-			font-size: 14px;
-			font-weight: bold;
-			color: #000;
+			.date {
+				font-size: 58px;
+				line-height: 50px;
+				text-shadow: -1px -1px 1px $text-shadow;
+				&:hover {
+					color: #fe8f00;
+				}
+			}
+
+			.ups {
+				font-size: 14px;
+				font-weight: bold;
+				color: #000;
+			}
 		}
 	}
 	
@@ -203,7 +217,8 @@ $border: 1px solid #d9d9d9;
 	
 	.prev,
 	.next {
-		float: left;
+		position: absolute;
+		top: 0;
 		background: url('../images/nav_sprite.png') no-repeat;
 
 		a {
@@ -214,6 +229,7 @@ $border: 1px solid #d9d9d9;
 	}
 	
 	.prev {
+		left: -32px;
 		background-position: top left;
 		&:hover {
 			background-position: bottom left;
@@ -221,6 +237,7 @@ $border: 1px solid #d9d9d9;
 	}
 	
 	.next {
+		right: -32px;
 		background-position: top right;
 		&:hover {
 			background-position: bottom right;
