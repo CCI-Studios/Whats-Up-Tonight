@@ -103,20 +103,21 @@ $border: 1px solid #d9d9d9;
 .mod_wutdates {
 	margin: 1em 32px;
 	position: relative;
-	background: url(../images/bg_day.png) top center repeat-x;
 	
 	.dates {
 		overflow: hidden;
+		padding-top: 5px;
 
 		> div { 
-			width: 200%;
 			position: relative;
+			height: 91px;
+			background: url(../images/bg_day.png) top center repeat-x;
 		}
 
 		> div > div {
 			background: url('../images/bg_day.png') top center repeat-x;
 			float: left;
-			width: 125px;
+			width: 116px;
 			text-align: center;
 			height: 86px;
 			padding: 4px 0 1px;
@@ -155,70 +156,70 @@ $border: 1px solid #d9d9d9;
 				font-weight: bold;
 				color: #000;
 			}
-		}
-	}
-	
-	.featured {
-		position: relative;
-		top: -7px;
-		width: 176px;
-		height: 90px;
-		padding-top: 12px;
-		background: url('../images/featured_sprite.png') top center no-repeat;
-		border-left: none;
-		&:hover {
-			background-position: bottom center;
-		}
-		//removes border-left on item after the featured item
-		& + .item a {
-			border-left: none;
-		}
-		.day {
-			color: #fff;
-			z-index: 2;
-			position: relative;
-		}
-		
-		.date {
-			position: absolute;
-			top: 28px;
-			left: 40px;
-			
-			font-size: 84px;
-			line-height: 60px; //fix for IE7
-			font-weight: bold;
-			color: #ffb540;
-			text-shadow: none;
-			z-index: 1;
-			&:hover {
-				color: #ffb540;
+
+			&.featured {
+				position: relative;
+				top: -7px;
+				width: 176px;
+				height: 90px;
+				padding-top: 12px;
+				background: url('../images/featured_sprite.png') top center no-repeat;
+				border-left: none;
+				&:hover {
+					background-position: bottom center;
+				}
+				//removes border-left on item after the featured item
+				& + div a {
+					border-left: none;
+				}
+				.day {
+					color: #fff;
+					z-index: 2;
+					position: relative;
+				}
+				
+				.date {
+					position: absolute;
+					top: 28px;
+					left: 40px;
+					
+					font-size: 84px;
+					line-height: 60px; //fix for IE7
+					font-weight: bold;
+					color: #ffb540;
+					text-shadow: none;
+					z-index: 1;
+					&:hover {
+						color: #ffb540;
+					}
+				}
+				
+				.ups {
+					color: #fff;
+					font-weight: normal;
+					text-shadow: -1px -1px 1px black;
+					margin-top: 49px;
+					z-index: 2;
+					position: relative;
+				}
+				
+				.logo-featured {
+					background: url('../images/logo-featured.png') center center no-repeat;
+					width: 151px;
+					height: 29px;
+					position: absolute;
+					top: 35px;
+					left: 17px;
+					z-index: 2;
+				}
 			}
-		}
-		
-		.ups {
-			color: #fff;
-			font-weight: normal;
-			text-shadow: -1px -1px 1px black;
-			margin-top: 49px;
-			z-index: 2;
-			position: relative;
-		}
-		
-		.logo-featured {
-			background: url('../images/logo-featured.png') center center no-repeat;
-			width: 151px;
-			height: 29px;
-			position: absolute;
-			top: 35px;
-			left: 17px;
-			z-index: 2;
 		}
 	}
 	
 	.prev,
 	.next {
 		position: absolute;
-		top: 0;
+		top: 5px;
 		background: url('../images/nav_sprite.png') no-repeat;
 
 		a {

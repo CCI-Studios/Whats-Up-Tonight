@@ -3,13 +3,17 @@
 </div></div>
 
 <div class="dates"><div>
-	<? foreach($days as $day): ?>
+	<? foreach($days as $index=>$day): ?>
 		<div 
-			data-date="<?= date('Y-m-d', $day['date']) ?>">
-			<a href="<?= @route("view=ups&{$itemid}&date=". date('Y-m-d', $day['date'])) ?>">
+			data-date="<?= date('Y-m-d', $day['date']) ?>"
+			<?= ($index == 3)? 'class="featured"':'' ?>>
+			<a 
+				href="<?= @route("view=ups&{$itemid}&date=". date('Y-m-d', $day['date'])) ?>">
 				<div class="day"><?= date('l', $day['date']) ?></div>
 				<div class="date"><?= date('d', $day['date']) ?></div>
 				<div class="ups"><?= $day['count'] ?><?= ($day['count'] > 1)? ' UPs':' UP' ?></div>
+
+				<div class="logo-featured"></div>
 			</a>
 		</div>
 	<? endforeach; ?>
