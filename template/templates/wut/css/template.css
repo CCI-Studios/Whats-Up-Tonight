@@ -738,14 +738,14 @@ div.chronoform {
   text-align: right;
   margin: 13px 0;
   font-size: 14px;
-  color: black; }
+  color: black;
+  height: 23px;
+  line-height: 23px; }
   #footer .module.social {
     float: right;
     margin: 0; }
-  .module.social p {
-    line-height: 2em;
-    vertical-align: top;
-    margin: 0; }
+  .module.social img {
+    vertical-align: bottom; }
 
 .module.logo {
   float: left;
