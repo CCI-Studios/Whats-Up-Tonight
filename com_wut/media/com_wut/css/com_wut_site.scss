@@ -256,7 +256,7 @@ $border: 1px solid #d9d9d9;
 			*display: inline;
 			*zoom: 1;
 
-			&:hover {
+			&:hover, &.active {
 				background: url('../images/rollover_mainMenu.png') 85% 39px no-repeat;
 				*zoom: 1;
 			}

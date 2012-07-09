@@ -21,6 +21,9 @@ window.addEvent('domready', function() {
 		event.preventDefault();
 		var category = this.get('data-category');
 		if (wut.category !== category) {
+			container.getElements('.mod_wutcategories li').removeClass('active');
+			this.getParent('li').addClass('active');
+
 			wut.category = category;
 			updateContents();
 		}
