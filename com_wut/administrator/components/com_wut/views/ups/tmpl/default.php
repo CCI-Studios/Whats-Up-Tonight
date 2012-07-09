@@ -33,7 +33,7 @@
 				<td><a href="<?= @route("view=up&id={$up->id}") ?>">
 					<?= $up->title .' - '. $up->location->title;?>
 				</a></td>
-				<td align="center"><?= $up->wut_location_id ?></td>
+				<td align="center"><?= $up->location->title ?></td>
 				<td align="center"><?= $up->date ?></td>
 				<td align="center"><?= @helper('grid.enable', array('row'=>$up)) ?></td>
 				<td align="center"><?= $up->id ?></td>

@@ -1,6 +1,6 @@
 var wut = {};
 wut.date = window.location.href.match(/date=(\d*-\d*-\d*)/);
-if (wut.date.length > 1) {
+if (wut.date && wut.date.length > 1) {
 	wut.date = wut.date[1];
 }
 wut.category = '';
