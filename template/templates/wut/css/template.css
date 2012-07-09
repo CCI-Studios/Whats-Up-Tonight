@@ -899,6 +899,7 @@ input[type="submit"],
   height: 41px;
   line-height: 41px;
   padding: 0 17px;
+  cursor: pointer;
   color: #fff;
   text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
   text-transform: uppercase; }
