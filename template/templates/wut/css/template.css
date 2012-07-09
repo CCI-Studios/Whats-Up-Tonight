@@ -898,7 +898,7 @@ input[type="submit"],
   width: 86px;
   height: 41px;
   line-height: 41px;
-  padding: 0 17px;
+  padding: 0 17px !important;
   cursor: pointer;
   color: #fff;
   text-shadow: -1px -1px 0 rgba(126, 57, 0, 0.7);
@@ -909,3 +909,6 @@ input[type="submit"],
     position: absolute;
     top: 16px;
     right: 20px; }
+
+input[type="submit"] {
+  width: 120px; }

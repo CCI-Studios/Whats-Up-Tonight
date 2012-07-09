@@ -28,7 +28,7 @@ input[type="submit"],
 	width: 86px;
 	height: 41px;
 	line-height: 41px;
-	padding: 0 17px;
+	padding: 0 17px !important; // fixes chronoforms
 	cursor: pointer;
 	
 	color: #fff;
@@ -43,4 +43,5 @@ input[type="submit"],
 }
 
 input[type="submit"] {
+	width: 120px; // fixes border-sizing: border-box
 }
