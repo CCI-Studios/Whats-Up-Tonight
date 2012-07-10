@@ -592,7 +592,11 @@ h2 {
   font-size: 14px;
   color: #e57900; }
   #content h2 {
-    margin: 2em 0 .5em; }
+    margin-top: 2em;
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 2px; }
+  #content input + h2 {
+    margin-top: 0; }
 
 h3 {
   font-size: 16px;
@@ -840,11 +844,14 @@ div.chronoform {
       color: #e57900;
       text-decoration: none; }
 
-.mediablock .media {
-  float: left;
-  margin-right: 5px; }
-.mediablock .content {
-  float: left; }
+.mediablock {
+  margin: 1em 0 0; }
+  .mediablock .media {
+    float: left;
+    margin-right: 1em; }
+  .mediablock .content {
+    float: left;
+    line-height: 1.3em; }
 
 /* styles */
 .clr, .clear {

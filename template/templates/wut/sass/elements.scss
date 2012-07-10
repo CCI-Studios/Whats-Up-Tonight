@@ -40,7 +40,12 @@ h2 {
 	color: $orange;
 	
 	#content & {
-		margin: 2em 0 .5em;
+		margin-top: 2em;
+		@include underline;
+	}
+	
+	#content input + & {
+		margin-top: 0;
 	}
 }
 

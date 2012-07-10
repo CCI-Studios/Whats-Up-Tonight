@@ -1,14 +1,17 @@
 .mediablock {
+	margin: 1em 0 0;
+	
 	.media {
 		float: left;
-		margin-right: 5px;
+		margin-right: 1em;
 	}
 
 	.content {
 		float: left;
+		line-height: 1.3em;
 	}
 
 	.media + .content {
-
+		
 	}
 }
