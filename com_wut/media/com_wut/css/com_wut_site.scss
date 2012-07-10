@@ -76,7 +76,7 @@ $border: 1px solid #d9d9d9;
 
 
 			img {
-				-webkit-transition: -webkit-transform 0.3s linear;
+				//-webkit-transition: -webkit-transform 0.3s linear; // FIXME Me being webkits buggy transform/transition sit.
 				-moz-transition: -moz-transform 0.3s linear;
 				-o-transition: -o-transform 0.3s linear;
 				transition: transform 0.3s linear;
