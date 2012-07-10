@@ -579,7 +579,7 @@ a:hover {
   text-decoration: underline; }
 
 p {
-  margin: 1em 0 0; }
+  margin: 1em 0; }
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
   margin: 0; }
