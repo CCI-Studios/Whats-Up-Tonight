@@ -37,6 +37,7 @@
     overflow: hidden;
     -webkit-transition: height 0.3s linear, opacity 0.3s linear;
     -moz-transition: height 0.3s linear, opacity 0.3s linear;
+    -o-transition: height 0.3s linear, opacity 0.3s linear;
     transition: height 0.3s linear, opacity 0.3s linear; }
   .com_wut-upInstance > div .description1 {
     height: 102px;
@@ -58,6 +59,7 @@
       .com_wut-upInstance > div .details .button img {
         -webkit-transition: -webkit-transform 0.3s linear;
         -moz-transition: -moz-transform 0.3s linear;
+        -o-transition: -o-transform 0.3s linear;
         transition: transform 0.3s linear; }
 
 .com_wut-upInstance.open .description1 {
@@ -68,6 +70,7 @@
 .com_wut-upInstance.open .button img {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 /* scroll-menu */
