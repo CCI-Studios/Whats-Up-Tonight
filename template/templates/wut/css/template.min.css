@@ -570,6 +570,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-top: 0; }
+  h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    margin: 0; }
 
 a, a:active, a:visited {
   color: #e57900;
@@ -848,7 +850,8 @@ div.chronoform {
       text-decoration: none; }
 
 .mediablock {
-  margin: 1em 0 0; }
+  margin: 1em 0 0;
+  overflow: auto; }
   .mediablock .media {
     float: left;
     margin-right: 1em; }
