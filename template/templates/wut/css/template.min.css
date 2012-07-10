@@ -713,6 +713,8 @@ div.chronoform {
 #sidebar {
   float: left;
   width: 320px; }
+  .ie7 #sidebar .module {
+    margin-bottom: 20px; }
 
 #grid {
   margin-left: -20px;

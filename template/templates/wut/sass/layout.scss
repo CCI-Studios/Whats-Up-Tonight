@@ -35,6 +35,10 @@
 #sidebar {
 	float: left;
 	width: 320px;
+	
+	.ie7 & .module {
+		margin-bottom: 20px;
+	}
 }
 
 #grid {
