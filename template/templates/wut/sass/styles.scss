@@ -1,7 +1,12 @@
 /* styles */
 .clr, .clear { clear: both; }
 .left { float: left; }
-.right { float: right; }
+.right { 
+	float: right;
+		.ie7 & {
+			clear: both;
+		}
+	}
 
 .hidden { display: none; }
 
@@ -12,6 +17,7 @@
 	clear: both;
 	height: 0;
 }
+
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 

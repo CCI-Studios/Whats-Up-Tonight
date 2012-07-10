@@ -863,6 +863,8 @@ div.chronoform {
 
 .right {
   float: right; }
+  .ie7 .right {
+    clear: both; }
 
 .hidden {
   display: none; }
