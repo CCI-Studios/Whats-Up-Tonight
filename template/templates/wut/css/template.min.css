@@ -711,7 +711,8 @@ div.chronoform {
     background: none; }
 
 #sidebar {
-  float: left; }
+  float: left;
+  width: 320px; }
 
 #grid {
   margin-left: -20px;
