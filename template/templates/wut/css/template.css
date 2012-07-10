@@ -572,11 +572,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
 
 a, a:active, a:visited {
-  color: #607890;
+  color: #e57900;
   text-decoration: none; }
 
 a:hover {
-  color: #036;
   text-decoration: underline; }
 
 p {
