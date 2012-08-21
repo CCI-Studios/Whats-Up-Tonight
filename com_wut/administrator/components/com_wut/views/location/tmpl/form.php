@@ -24,7 +24,7 @@
 
 				<li>
 					<label for="field_city"><?= @text('City') ?>:</label>
-					<input type="text" name="city" id="field_city" value="<?=$location->address?>" />
+					<input type="text" name="city" id="field_city" value="<?=$location->city?>" />
 				</li>
 
 				<li>
