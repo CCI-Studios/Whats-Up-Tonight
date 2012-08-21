@@ -9,6 +9,7 @@
 			<?= ($index == 3)? 'class="featured"':'' ?>>
 			<a 
 				href="<?= @route("view=ups&{$itemid}&date=". date('Y-m-d', $day['date'])) ?>">
+				<div class="month"><?= date('M', $day['date']) ?></div>
 				<div class="day"><?= date('l', $day['date']) ?></div>
 				<div class="date"><?= date('d', $day['date']) ?></div>
 				<div class="ups"><?= $day['count'] ?><?= ($day['count'] == 1)? ' UP':' UPs' ?></div>

@@ -26,22 +26,22 @@ $border: 1px solid #d9d9d9;
 	min-height: 125px;
 	background-color: #fff;
 	border-radius: 5px;
-	border: $border;	
+	border: $border;
 	padding: 13px 19px 30px;
 	margin-bottom: 3em;
 	font-size: 14px;
 	color: #4c4c4c;
 	position: relative;
 	@include mainGradient;
-		
+
 	h3 {
 		@include underline;
 	}
-	
+
 	h4 {
 		margin: 0 0 .5em 0;
 	}
-	
+
 	.logo {
 		overflow: visible;
 		float: left;
@@ -102,12 +102,12 @@ $border: 1px solid #d9d9d9;
 	margin: 1em 32px;
 	position: relative;
 	*zoom: 1;
-	
+
 	.dates {
 		overflow: hidden;
 		padding-top: 5px;
 
-		> div { 
+		> div {
 			position: relative;
 			height: 91px;
 			background: url(../images/bg_day.png) top center repeat-x;
@@ -120,6 +120,7 @@ $border: 1px solid #d9d9d9;
 			text-align: center;
 			height: 86px;
 			padding: 4px 0 1px;
+			position: relative;
 
 			&:first-child a,
 			&.featured a {
@@ -128,13 +129,30 @@ $border: 1px solid #d9d9d9;
 			&:hover * {
 				text-decoration: none;
 			}
-			
+
 			a {
 				display: block;
 				color: $orange;
 				border-left: $border;
+				position: relative;
+				z-index: 2;
 			}
-			
+
+			.month {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				line-height: 80px;
+				text-align: center;
+				font-size: 40px;
+				color: #CACACA;
+				opacity: 0.8;
+				z-index: -1;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+
 			.day {
 				font-size: 16px;
 				line-height: 16px;
@@ -176,12 +194,14 @@ $border: 1px solid #d9d9d9;
 					z-index: 2;
 					position: relative;
 				}
-				
+
+				.month { display: none; }
+
 				.date {
 					position: absolute;
-					top: 28px;
+					top: 18px;
 					left: 40px;
-					
+
 					font-size: 84px;
 					line-height: 60px; //fix for IE7
 					font-weight: bold;
@@ -192,7 +212,7 @@ $border: 1px solid #d9d9d9;
 						color: #ffb540;
 					}
 				}
-				
+
 				.ups {
 					color: #fff;
 					font-weight: normal;
@@ -201,20 +221,20 @@ $border: 1px solid #d9d9d9;
 					z-index: 2;
 					position: relative;
 				}
-				
+
 				.logo-featured {
 					background: url('../images/logo-featured.png') center center no-repeat;
 					width: 151px;
 					height: 29px;
 					position: absolute;
-					top: 35px;
+					top: 25px;
 					left: 17px;
 					z-index: 2;
 				}
 			}
 		}
 	}
-	
+
 	.prev,
 	.next {
 		position: absolute;
@@ -227,7 +247,7 @@ $border: 1px solid #d9d9d9;
 			display: block;
 		}
 	}
-	
+
 	.prev {
 		left: -32px;
 		background-position: top left;
@@ -235,7 +255,7 @@ $border: 1px solid #d9d9d9;
 			background-position: bottom left;
 		}
 	}
-	
+
 	.next {
 		right: -32px;
 		background-position: top right;
@@ -243,17 +263,17 @@ $border: 1px solid #d9d9d9;
 			background-position: bottom right;
 		}
 	}
-	
+
 }
 
-.mod_wutcategories {	
+.mod_wutcategories {
 	ul {
 		background: url('../images/bg_categoryMenu.png') top center no-repeat;
 		margin: 0;
 		padding: 0;
 		font-size: 14px;
-		text-transform: uppercase;		
-		
+		text-transform: uppercase;
+
 		li {
 			display: inline-block;
 			padding-bottom: 14px;
@@ -275,12 +295,12 @@ $border: 1px solid #d9d9d9;
 			padding: 0 17px 0 20px;
 			text-decoration: none; //fix for IE7
 			color: #fff;
-			
+
 			img {
 				position: relative;
 				top: 5px;
 			}
-			
+
 			span {
 				display: inline-block;
 				*display: inline;
