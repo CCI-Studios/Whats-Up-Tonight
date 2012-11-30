@@ -2,6 +2,9 @@ var wut = {};
 wut.date = window.location.href.match(/date=(\d*-\d*-\d*)/);
 if (wut.date && wut.date.length > 1) {
 	wut.date = wut.date[1];
+} else {
+	wut.date = new Date();
+	wut.date = wut.date.getFullYear() +"-"+ (wut.date.getMonth() + 1) +"-"+ wut.date.getDate();
 }
 wut.category = '';
 wut.offset = '';
