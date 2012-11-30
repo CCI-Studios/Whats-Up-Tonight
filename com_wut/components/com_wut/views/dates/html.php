@@ -12,6 +12,7 @@ class ComWutViewDatesHtml extends ComDefaultViewHtml
 			$date = date('Y-m-d', strtotime($current ." $i days"));
 			$model = $this->getService('com://site/wut.model.ups');
 			$model->set('date', $date);
+			$model->enabled(1);
 			$model->getList();
 
 			$day = array(
@@ -34,8 +35,8 @@ class ComWutViewDatesHtml extends ComDefaultViewHtml
 	{
 		$menu = JSite::getMenu('site');
 		$item = $menu->getItems(
-				'link', 
-				'index.php?option=com_wut&view=ups', 
+				'link',
+				'index.php?option=com_wut&view=ups',
 				true);
 
 		if ($item) {
