@@ -8,7 +8,7 @@
 	<? else: ?>
 		<? if (!count($ups)): ?>
 			<div class="row">
-				<div class="span12 com_wut-upInstance"><div>
+				<div class="span8 com_wut-upInstance"><div>
 					<div>
 						<h3>No UPs Available</h3>
 						<p>There are no UPs available for this date. Please choose another date.</p>
