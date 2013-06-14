@@ -29,6 +29,7 @@
 		<position>header</position>
 		<position>masthead</position>
 		<position>sidebar</position>
+		<position>sidebar2</position>
 		<position>grid</position>
 		<position>bottom</position>
 		<position>footer</position>

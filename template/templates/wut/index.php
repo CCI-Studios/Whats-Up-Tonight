@@ -41,7 +41,7 @@ $typekit = null;
 
 	<meta name="viewport" content="width=940px, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
-	<link rel="shortcut icon" type="image/x-icon" href="/templates/<?= $this->template ?>/favicon-<?= $this->language ?>.ico">	
+	<link rel="shortcut icon" type="image/x-icon" href="/templates/<?= $this->template ?>/favicon-<?= $this->language ?>.ico">
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
 
 
@@ -63,17 +63,17 @@ $typekit = null;
 <body class="<?= $menu ?>">
 
 	<div id="wrapper">
-		
+
 		<div id="header"><div class="container">
 			<jdoc:include type="modules" name="header" style="rounded" />
 			<div class="clear"></div>
 		</div></div>
-		
+
 		<div id="masthead"><div class="container">
 			<jdoc:include type="modules" name="masthead" style="rounded" />
 			<div class="clear"></div>
 		</div></div>
-		
+
 		<div id="main"><div class="container">
 			<?php if ($page_sfx !== '_hidden'): ?>
 			<div id="content">
@@ -82,19 +82,24 @@ $typekit = null;
 			</div>
 			<?php endif; ?>
 			<div id="sidebar">
-				<jdoc:include type="modules" name="sidebar" style="rounded" />
+				<? if ($this->countModules('sidebar')): ?>
+					<div id="sidebar1"><jdoc:include type="modules" name="sidebar" style="rounded" /></div>
+				<? endif; ?>
+				<? if ($this->countModules('sidebar2')): ?>
+					<div id="sidebar2"><jdoc:include type="modules" name="sidebar2" style="rounded" /></div>
+				<? endif; ?>
 			</div>
 			<div id="bottom">
 				<jdoc:include type="modules" name="bottom" style="rounded" />
 			</div>
 		</div></div>
-		
+
 		<div id="footer"><div><div class="container">
 			<span class="left span4">&copy; Whats Up Tonight.com <?php echo date('Y') ?>. All Rights Reserved.<br />
 				Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></span>
 			<jdoc:include type="modules" name="footer" style="rounded" />
 		</div></div></div>
-		
+
 	</div>
 
 	<div class="hidden">
