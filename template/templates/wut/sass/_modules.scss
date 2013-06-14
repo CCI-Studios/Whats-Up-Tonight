@@ -1,3 +1,5 @@
+@import "banners";
+
 /* @group modules */
 .moduletable {}
 
@@ -32,16 +34,16 @@
 
 .module.pageTitle {
 	margin-left: 0;
-	
+
 	> div {
 		background: url('../images/bg_pageTitle.png') top center no-repeat;
 		line-height: 41px;
 		padding: 0 15px;
-		
+
 		text-transform: uppercase;
 		color: #fff;
 	}
-	
+
 	> div > div > div > div {
 		background: left 45% no-repeat;
 		padding: 0 0 0 40px;
@@ -55,21 +57,21 @@
 	margin: 0;
 	text-align: center;
 	margin: 0;
-	
+
 	ul.pages {
 		float: none;
 		padding: 0;
 		margin: 0;
 		list-style: none;
-		
+
 		li {
 			display: inline-block;
 			*display: inline;
 			*zoom: 1;
-			
+
 			padding: 0 8px;
-						
-			a, span {	
+
+			a, span {
 				font-size: 14px;
 				color: $orange;
 			}

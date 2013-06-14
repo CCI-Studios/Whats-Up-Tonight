@@ -1,3 +1,9 @@
+.bannergroup {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+
 /* normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -832,8 +838,7 @@ div.chronoform {
   /* W3C */
 }
 body.home #content {
-  float: none;
-  width: 100%;
+  width: 620px;
   padding: 0;
   border: none;
   background: none;
@@ -845,6 +850,10 @@ body.home #content {
 }
 .ie7 #sidebar .module {
   margin-bottom: 20px;
+}
+
+#sidebar2 {
+  margin-left: 20px;
 }
 
 #grid {
@@ -870,6 +879,24 @@ body.home #content {
 }
 #footer a:hover {
   color: black;
+}
+
+.bannergroup {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+
+.bannergroup {
+  padding: 8px;
+  margin: 0 0 1em;
+  clear: both;
+  text-align: center;
+}
+.bannergroup img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* @group modules */

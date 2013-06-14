@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+.bannergroup {
+	@extend %stdBackground;
+
+	padding: 8px;
+	margin: 0 0 1em;
+
+	clear: both;
+	text-align: center;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
