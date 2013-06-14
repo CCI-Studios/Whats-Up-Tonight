@@ -10,5 +10,5 @@ window.addEvent('domready', function() {
 window.addEvent('load', function () {
 	// columns
 	new CCI.Columns($('grid'), '.module > div ');
-	new CCI.Columns($('sidebar'), '.module > div ');
+	new CCI.Columns($('sidebar1'), '.module > div ');
 });
