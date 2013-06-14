@@ -2,6 +2,7 @@
 <? @helper('behavior.mootools') ?>
 <style src="media://lib_koowa/css/koowa.css" />
 <script src="media://lib_koowa/js/koowa.js" />
+<script src="media://com_wut/js/com_wut.admin.js" />
 <style src="media://com_calendar/css/form.css" />
 
 <form action="<? @route('id='.$up->id)?>" method="post" class="-koowa-form">
@@ -23,11 +24,45 @@
 						'attribs'	=> array('class' => 'required')
 					)) ?>
 				</li>
+			</ul>
+		</fieldset>
 
+		<fieldset class="adminform">
+			<legend><?= @text('Date(s)') ?></legend>
+
+			<ul class="adminformlist">
 				<li>
+					<label for="field_reoccuring"><?= @text('Reoccuring Event') ?>:</label>
+					<input type="hidden" name="reoccuring" value="0" />
+					<input type="checkbox"
+						name="reoccuring"
+						id="field_reoccuring"
+						value="1"
+						<?= ($up->isReoccuring())? 'checked="checked"': ''?> />
+				</li>
+
+				<li data-reoccuring="0">
 					<label for="field_date"><?= @text('Date') ?>:</label>
 					<?= JHtml::_('calendar', $up->date, 'date', 'field_date', '%Y-%m-%d') ?>
 				</li>
+
+				<li data-reoccuring="1">
+					<label for="field_start_date"><?= @text('Start Date') ?>:</label>
+					<?= JHtml::_('calendar', $up->start_date, 'start_date', 'field_start_date', '%Y-%m-%d') ?>
+				</li>
+
+				<li data-reoccuring="1">
+					<label for="field_date"><?= @text('End Date') ?>:</label>
+					<?= JHtml::_('calendar', $up->end_date, 'end_date', 'field_end_date', '%Y-%m-%d') ?>
+				</li>
+
+				<li data-reoccuring="1"><?= @helper('checks.checkbox', array('field'=>'sunday'))?></li>
+				<li data-reoccuring="1"><?= @helper('checks.checkbox', array('field'=>'monday'))?></li>
+				<li data-reoccuring="1"><?= @helper('checks.checkbox', array('field'=>'tuesday'))?></li>
+				<li data-reoccuring="1"><?= @helper('checks.checkbox', array('field'=>'wednesday'))?></li>
+				<li data-reoccuring="1"><?= @helper('checks.checkbox', array('field'=>'thursday'))?></li>
+				<li data-reoccuring="1"><?= @helper('checks.checkbox', array('field'=>'friday'))?></li>
+				<li data-reoccuring="1"><?= @helper('checks.checkbox', array('field'=>'saturday'))?></li>
 			</ul>
 		</fieldset>
 
@@ -68,50 +103,50 @@
 				<li>
 					<label for="field_eats"><?= @text('Eats') ?>:</label>
 					<input type="hidden" name="eats" value="0" />
-					<input type="checkbox" 
-						name="eats" 
-						id="field_eats" 
-						value="1" 
+					<input type="checkbox"
+						name="eats"
+						id="field_eats"
+						value="1"
 						<?= ($up->eats)? 'checked="checked"': ''?> />
 				</li>
 
 				<li>
 					<label for="field_drinks"><?= @text('Drinks') ?>:</label>
 					<input type="hidden" name="drinks" value="0" />
-					<input type="checkbox" 
-						name="drinks" 
-						id="field_drinks" 
-						value="1" 
+					<input type="checkbox"
+						name="drinks"
+						id="field_drinks"
+						value="1"
 						<?= ($up->drinks)? 'checked="checked"': ''?> />
 				</li>
 
 				<li>
 					<label for="field_entertainment"><?= @text('Entertainment') ?>:</label>
 					<input type="hidden" name="entertainment" value="0" />
-					<input type="checkbox" 
-						name="entertainment" 
-						id="field_entertainment" 
-						value="1" 
+					<input type="checkbox"
+						name="entertainment"
+						id="field_entertainment"
+						value="1"
 						<?= ($up->entertainment)? 'checked="checked"': ''?> />
 				</li>
 
 				<li>
 					<label for="field_events"><?= @text('Events') ?>:</label>
 					<input type="hidden" name="events" value="0" />
-					<input type="checkbox" 
-						name="events" 
-						id="field_events" 
-						value="1" 
+					<input type="checkbox"
+						name="events"
+						id="field_events"
+						value="1"
 						<?= ($up->events)? 'checked="checked"': ''?> />
 				</li>
 
 				<li>
 					<label for="field_otbs"><?= @text('OTBS') ?>:</label>
 					<input type="hidden" name="otbs" value="0" />
-					<input type="checkbox" 
-						name="otbs" 
-						id="field_otbs" 
-						value="1" 
+					<input type="checkbox"
+						name="otbs"
+						id="field_otbs"
+						value="1"
 						<?= ($up->otbs)? 'checked="checked"': ''?> />
 				</li>
 			</ul>
