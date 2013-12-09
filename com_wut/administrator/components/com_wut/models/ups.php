@@ -52,8 +52,10 @@ class ComWutModelUps extends ComDefaultModelDefault
 			$query->where('tbl.end_date', '>=', $state->date);
 			$query->where('tbl.'.$dayName, '=', 1);
 			$query->where('tbl.enabled', '>=', $state->enabled); // dirty hack
+			if (isset($state->category) && $state->category != "") {
+				$query->where("tbl.{$state->category}", '>=', '1');
+			}
 			//$query->where = array_merge($query->where, $where);
-
 		}
 
 		parent::_buildQueryWhere($query);
