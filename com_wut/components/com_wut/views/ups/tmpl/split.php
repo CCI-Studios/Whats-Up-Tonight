@@ -1,3 +1,7 @@
+<?php
+shuffle($ups);
+?>
+
 <div class="com_wut-ups">
 	<? if (count($ups)): ?>
 		<div class="row">
